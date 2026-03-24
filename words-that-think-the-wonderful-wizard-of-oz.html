@@ -1,0 +1,3372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Words That Think · The Wizard of Oz</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+<meta name="description" content="Master 100 essential vocabulary words from L. Frank Baum's beloved classic, The Wonderful Wizard of Oz, with bilingual English-Chinese definitions, original quotes from the novel, and original example sentences that explore the timeless themes of courage, friendship, perseverance, and the true meaning of home.">
+<meta name="theme-color" content="#06131a">
+<style>
+:root {
+  --bg:       #06131a;
+  --panel:    #0b1b24;
+  --panel2:   #0e2230;
+  --stroke:   #7ad0e0;
+  --text:     #e7fbff;
+  --muted:    #9fd6df;
+  --muted2:   #4a6e78;
+  --bad:      #ff5c7a;
+  --good:     #6ef7c8;
+  --gold:     #f0c040;
+  --gold2:    #ffe080;
+  --s35:      rgba(122,208,224,.35);
+  --s60:      rgba(122,208,224,.60);
+  --s20:      rgba(122,208,224,.20);
+  --o15:      rgba(0,0,0,.15);
+  --o25:      rgba(0,0,0,.25);
+  --panel-a:  rgba(11,27,36,.90);
+  --good15:   rgba(110,247,200,.15);
+  --good60:   rgba(110,247,200,.60);
+  --bad12:    rgba(255,92,122,.12);
+  --bad55:    rgba(255,92,122,.55);
+  --gold10:   rgba(240,192,64,.10);
+  --gold50:   rgba(240,192,64,.50);
+}
+*, *::before, *::after { box-sizing: border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: radial-gradient(900px 600px at 50% 0%, var(--panel2) 0%, var(--bg) 65%);
+  color: var(--text);
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+button { font-family: inherit; color: var(--text); cursor: pointer; }
+.wrapper { max-width: 680px; margin: 0 auto; padding: 0 14px; }
+.app-header {
+  text-align: center;
+  padding: 32px 10px 22px;
+  border-bottom: 1px solid var(--s20);
+}
+.app-header h1 {
+  font-family: Georgia, 'Times New Roman', 'Songti SC', serif;
+  font-size: clamp(2rem, 7vw, 2.8rem);
+  font-weight: 700;
+  color: var(--good);
+  letter-spacing: .01em;
+  text-shadow: 0 0 30px rgba(110,247,200,.25);
+  line-height: 1.15;
+}
+.app-header .tagline {
+  margin-top: 8px;
+  font-size: clamp(0.85rem, 3vw, 1rem);
+  color: var(--muted);
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+.app-header .book-credit {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: var(--muted2);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.header-star-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.header-badge {
+  background: var(--panel-a);
+  border: 1px solid var(--s35);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.header-badge:hover { background: rgba(122,208,224,.08); border-color: var(--s60); }
+.header-badge.active { background: var(--good15); border-color: var(--good60); color: var(--good); }
+.group-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 18px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 16px;
+  padding: 10px 14px;
+}
+.group-nav-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+}
+.group-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted2);
+  font-weight: 700;
+}
+.group-num {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--good);
+  letter-spacing: .02em;
+}
+.group-dots {
+  display: flex;
+  gap: 5px;
+  margin-top: 3px;
+}
+.group-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--muted2);
+  transition: background .2s, transform .2s;
+}
+.group-dot.active { background: var(--good); transform: scale(1.3); }
+.group-dot.done { background: var(--s60); }
+.nav-pill {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--muted);
+  transition: all .15s;
+  white-space: nowrap;
+}
+.nav-pill:hover:not(:disabled) { background: rgba(122,208,224,.15); border-color: var(--s60); color: var(--text); }
+.nav-pill:disabled { opacity: .35; pointer-events: none; }
+.word-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 0 2px;
+}
+.word-nav-center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  justify-content: center;
+}
+.word-counter {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+.word-counter span { color: var(--text); }
+.icon-btn {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  transition: all .15s;
+  color: var(--muted);
+}
+.icon-btn:hover { background: rgba(122,208,224,.15); border-color: var(--s60); color: var(--text); }
+.icon-btn.starred { color: var(--gold); border-color: var(--gold50); background: var(--gold10); }
+.icon-btn:disabled { opacity: .3; pointer-events: none; }
+.word-card {
+  margin-top: 10px;
+  background: linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95));
+  border: 1px solid var(--s35);
+  border-radius: 22px;
+  overflow: hidden;
+  transition: border-color .2s;
+}
+.word-card-top {
+  padding: 20px 20px 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid var(--s20);
+}
+.word-left { display: flex; flex-direction: column; gap: 4px; }
+.word-display {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: clamp(1.7rem, 6vw, 2.2rem);
+  font-weight: 900;
+  color: var(--gold);
+  letter-spacing: .02em;
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(240,192,64,.2);
+}
+.pron-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.pron-text {
+  font-size: 1.1rem;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: .03em;
+}
+.speak-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--good);
+  transition: all .15s;
+}
+.speak-btn:hover { background: rgba(110,247,200,.25); }
+.chapter-badge {
+  background: rgba(122,208,224,.08);
+  border: 1px solid var(--s35);
+  border-radius: 8px;
+  padding: 4px 9px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+.definition-block {
+  padding: 14px 20px 16px;
+  border-bottom: 1px solid var(--s20);
+}
+.def-en {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(231,251,255,.9);
+}
+.def-zh {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-top: 4px;
+  font-weight: 500;
+}
+.sentence-tab-row {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--s20);
+}
+.sent-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted2);
+  transition: all .15s;
+  text-align: center;
+}
+.sent-tab:hover { color: var(--muted); background: rgba(122,208,224,.04); }
+.sent-tab.active {
+  color: var(--good);
+  border-bottom-color: var(--good);
+  background: rgba(110,247,200,.04);
+}
+.sentence-content {
+  padding: 18px 20px 20px;
+}
+.sent-en {
+  font-family: Georgia, 'Times New Roman', 'Songti SC', serif;
+  font-size: clamp(1.08rem, 3.5vw, 1.18rem);
+  line-height: 1.85;
+  color: rgba(231,251,255,.88);
+  font-style: italic;
+}
+.sent-zh {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-top: 12px;
+  font-weight: 400;
+  padding-top: 12px;
+  border-top: 1px solid var(--s20);
+}
+.sent-en .hl {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--gold2);
+  background: rgba(240,192,64,.08);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+.sent-source {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  color: var(--muted2);
+  text-align: right;
+  letter-spacing: .04em;
+}
+.quiz-phase-label {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted2);
+  margin-bottom: 10px;
+}
+.quiz-section {
+  margin-top: 14px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s;
+}
+.quiz-header:hover { background: rgba(122,208,224,.05); }
+.quiz-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.quiz-title {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--text);
+}
+.quiz-subtitle {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  margin-top: 1px;
+}
+.quiz-score-badge {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--good);
+  display: none;
+}
+.quiz-toggle-icon { font-size: 0.85rem; color: var(--muted2); transition: transform .2s; }
+.quiz-toggle-icon.open { transform: rotate(180deg); }
+.quiz-body {
+  display: none;
+  padding: 0 18px 18px;
+  border-top: 1px solid var(--s20);
+}
+.quiz-body.open { display: block; }
+.quiz-progress-bar {
+  height: 4px;
+  background: rgba(122,208,224,.12);
+  border-radius: 999px;
+  margin: 14px 0 16px;
+  overflow: hidden;
+}
+.quiz-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--good), #4edfc9);
+  border-radius: 999px;
+  transition: width .3s ease;
+}
+.quiz-q-num {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 10px;
+}
+.quiz-sentence {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: clamp(1.05rem, 3vw, 1.15rem);
+  line-height: 1.8;
+  color: rgba(231,251,255,.9);
+  background: rgba(122,208,224,.05);
+  border: 1px solid var(--s20);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+.blank { color: var(--gold); font-style: normal; font-weight: 700; letter-spacing: .1em; }
+.quiz-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.choice-btn {
+  background: rgba(122,208,224,.06);
+  border: 1px solid var(--s35);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: left;
+  transition: all .15s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.choice-btn:hover:not(:disabled) { background: rgba(122,208,224,.12); border-color: var(--s60); }
+.choice-btn .choice-label {
+  background: var(--s35);
+  border-radius: 4px;
+  width: 20px; height: 20px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+.choice-btn.correct { background: var(--good15); border-color: var(--good60); color: var(--good); }
+.choice-btn.wrong   { background: var(--bad12);  border-color: var(--bad55);  color: var(--bad); }
+.choice-btn:disabled { pointer-events: none; opacity: .7; }
+.quiz-feedback {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: none;
+}
+.quiz-feedback.correct-fb { background: var(--good15); color: var(--good); border: 1px solid var(--good60); }
+.quiz-feedback.wrong-fb   { background: var(--bad12);  color: var(--bad);  border: 1px solid var(--bad55); }
+.quiz-next-btn {
+  background: rgba(122,208,224,.1);
+  border: 1px solid var(--s60);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text);
+  display: none;
+  transition: background .15s;
+}
+.quiz-next-btn:hover { background: rgba(122,208,224,.18); }
+.quiz-result {
+  display: none;
+  text-align: center;
+  padding: 16px 0 4px;
+}
+.quiz-result-score {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--good);
+  line-height: 1;
+}
+.quiz-result-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 4px;
+  margin-bottom: 14px;
+}
+.quiz-result-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.quiz-retry-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--good);
+  transition: background .15s;
+}
+.quiz-retry-btn:hover { background: rgba(110,247,200,.25); }
+.quiz-start-area {
+  padding: 16px 0 4px;
+  text-align: center;
+}
+.quiz-start-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+.quiz-start-btn {
+  background: var(--good15);
+  border: 1px solid var(--good60);
+  border-radius: 999px;
+  padding: 10px 28px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--good);
+  transition: background .15s;
+}
+.quiz-start-btn:hover { background: rgba(110,247,200,.25); }
+.quiz-skip-btn {
+  background: none;
+  border: none;
+  color: var(--muted2);
+  font-size: 0.78rem;
+  margin-left: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.starred-section {
+  margin-top: 14px;
+  background: var(--panel);
+  border: 1px solid var(--s35);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.starred-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s;
+}
+.starred-header:hover { background: rgba(240,192,64,.04); }
+.starred-header-left { display: flex; align-items: center; gap: 10px; }
+.starred-title { font-size: 0.9rem; font-weight: 800; color: var(--text); }
+.starred-count {
+  background: var(--gold10);
+  border: 1px solid var(--gold50);
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+.starred-body { display: none; padding: 0 18px 18px; border-top: 1px solid var(--s20); }
+.starred-body.open { display: block; }
+.starred-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 14px;
+}
+.starred-chip {
+  background: var(--gold10);
+  border: 1px solid var(--gold50);
+  border-radius: 999px;
+  padding: 5px 13px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold);
+  cursor: pointer;
+  transition: all .15s;
+}
+.starred-chip:hover { background: rgba(240,192,64,.18); }
+.starred-empty {
+  padding-top: 14px;
+  font-size: 0.85rem;
+  color: var(--muted2);
+  font-style: italic;
+  text-align: center;
+}
+.my-sentences-block {
+  padding: 16px 20px 18px;
+  border-top: 1px solid var(--s20);
+}
+.my-sent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.my-sent-title {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--muted);
+  letter-spacing: .02em;
+}
+.my-sent-counter {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--muted2);
+  background: var(--o25);
+  border: 1px solid var(--s20);
+  border-radius: 999px;
+  padding: 2px 9px;
+}
+.my-sent-counter.full { color: var(--gold); border-color: var(--gold50); background: var(--gold10); }
+.my-sent-input-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+.my-sent-input {
+  flex: 1;
+  background: rgba(122,208,224,.06);
+  border: 1px solid var(--s35);
+  border-radius: 12px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.88rem;
+  padding: 9px 13px;
+  outline: none;
+  transition: border-color .15s;
+  min-width: 0;
+}
+.my-sent-input:focus { border-color: var(--s60); background: rgba(122,208,224,.09); }
+.my-sent-input::placeholder { color: var(--muted2); }
+.my-sent-save-btn {
+  background: rgba(122,208,224,.1);
+  border: 1px solid var(--s60);
+  border-radius: 12px;
+  padding: 9px 16px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--stroke);
+  white-space: nowrap;
+  transition: background .15s;
+  flex-shrink: 0;
+}
+.my-sent-save-btn:hover { background: rgba(122,208,224,.2); }
+.my-sent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 10px;
+}
+.my-sent-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: rgba(122,208,224,.05);
+  border: 1px solid var(--s20);
+  border-radius: 10px;
+  padding: 9px 12px;
+}
+.my-sent-num {
+  font-size: 0.68rem;
+  font-weight: 900;
+  color: var(--muted2);
+  background: var(--s20);
+  border-radius: 4px;
+  padding: 2px 6px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.my-sent-text {
+  flex: 1;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(231,251,255,.85);
+}
+.my-sent-del {
+  background: none;
+  border: none;
+  color: var(--muted2);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 3px;
+  flex-shrink: 0;
+  opacity: .6;
+  transition: color .15s, opacity .15s;
+}
+.my-sent-del:hover { color: var(--bad); opacity: 1; }
+.starred-quiz-divider {
+  height: 1px;
+  background: var(--s20);
+  margin: 14px 0;
+}
+.sq-start-area { text-align: center; padding-bottom: 4px; }
+.sq-desc {
+  font-size: 0.82rem;
+  color: var(--muted2);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+.sq-unlock-hint {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  font-style: italic;
+}
+footer {
+  margin-top: 36px;
+  padding: 20px 14px 28px;
+  border-top: 1px solid var(--s20);
+  text-align: center;
+}
+.footer-author {
+  font-size: 0.8rem;
+  color: var(--muted2);
+  line-height: 1.9;
+}
+.footer-author a { color: var(--muted); text-decoration: none; }
+.footer-author a:hover { color: var(--stroke); }
+.footer-quote {
+  margin-top: 12px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--muted2);
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+#toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: rgba(11,27,36,.96);
+  border: 1px solid var(--s60);
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s, transform .2s;
+  white-space: nowrap;
+  z-index: 9999;
+}
+#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+#toast.gold { border-color: var(--gold50); color: var(--gold); }
+#toast.good { border-color: var(--good60); color: var(--good); }
+@media (max-width: 480px) {
+  .word-card-top { flex-wrap: wrap; }
+  .quiz-choices { grid-template-columns: 1fr; }
+  .group-dots { display: none; }
+  .nav-pill { padding: 7px 12px; font-size: 0.8rem; }
+}
+.synan-block {
+  padding: 10px 20px 14px;
+  border-bottom: 1px solid var(--s20);
+  display: flex; gap: 14px; flex-wrap: wrap;
+}
+.synan-group { flex: 1; min-width: 0; }
+.synan-label {
+  font-size: 0.65rem; font-weight: 900; text-transform: uppercase;
+  letter-spacing: .1em; margin-bottom: 5px;
+}
+.synan-label.syn { color: var(--good); }
+.synan-label.ant { color: var(--bad); }
+.synan-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.synan-chip {
+  font-size: 0.75rem; font-weight: 600; padding: 3px 9px;
+  border-radius: 999px;
+}
+.synan-chip.syn { background: rgba(110,247,200,.1); border: 1px solid rgba(110,247,200,.35); color: var(--good); }
+.synan-chip.ant { background: rgba(255,92,122,.08); border: 1px solid rgba(255,92,122,.3);  color: var(--bad); }
+.spell-content { padding: 18px 20px 22px; }
+.spell-sentence {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: clamp(1.08rem, 3.5vw, 1.18rem);
+  line-height: 1.85;
+  color: rgba(231,251,255,.88);
+  margin-bottom: 18px;
+}
+.spell-sentence .hl { font-style: normal; font-weight: 700; color: var(--gold2); }
+.spell-boxes {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  justify-content: center; margin-bottom: 18px;
+}
+.spell-box {
+  width: 40px; height: 46px;
+  border: 2px solid var(--s35);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; font-weight: 800; text-transform: lowercase;
+  background: rgba(122,208,224,.05);
+  transition: border-color .15s, background .15s;
+  flex-shrink: 0;
+}
+.spell-box.filled   { border-color: var(--s60); background: rgba(122,208,224,.1); color: var(--text); }
+.spell-box.correct  { border-color: var(--good); background: rgba(110,247,200,.15); color: var(--good); }
+.spell-box.wrong    { border-color: var(--bad);  background: rgba(255,92,122,.12);  color: var(--bad); }
+.spell-box.cursor   { border-color: var(--gold); animation: spell-blink .9s ease infinite; }
+@keyframes spell-blink { 0%,100% { border-color: var(--gold); } 50% { border-color: transparent; } }
+.spell-input-row {
+  display: flex; gap: 8px; align-items: center; justify-content: center; flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.spell-input {
+  background: rgba(122,208,224,.06); border: 1px solid var(--s35);
+  border-radius: 12px; color: var(--text); font-family: inherit;
+  font-size: 1rem; font-weight: 700; padding: 9px 14px; outline: none;
+  width: 180px; text-align: center; letter-spacing: .12em;
+  transition: border-color .15s;
+}
+.spell-input:focus { border-color: var(--s60); }
+.spell-input::placeholder { color: var(--muted2); font-weight: 400; letter-spacing: 0; }
+.spell-check-btn {
+  background: var(--good15); border: 1px solid var(--good60);
+  border-radius: 12px; padding: 9px 18px;
+  font-size: .88rem; font-weight: 800; color: var(--good);
+  transition: background .15s;
+}
+.spell-check-btn:hover { background: rgba(110,247,200,.25); }
+.spell-reveal-btn {
+  background: none; border: none; color: var(--muted2);
+  font-size: .78rem; text-decoration: underline; cursor: pointer;
+  display: block; text-align: center; margin-top: 4px;
+}
+.spell-feedback {
+  text-align: center; font-size: .9rem; font-weight: 800;
+  padding: 10px; border-radius: 10px; margin-top: 4px; display: none;
+}
+.spell-feedback.ok  { background: var(--good15); color: var(--good); border: 1px solid var(--good60); }
+.spell-feedback.err { background: var(--bad12);  color: var(--bad);  border: 1px solid var(--bad55); }
+.spell-hint-row { text-align: center; margin-bottom: 10px; }
+.spell-hint-text { font-size: .78rem; color: var(--muted2); font-style: italic; }
+
+/* ── Print button ─────────────────────────────────────── */
+.print-btn { margin-left: 8px; }
+.header-star-row { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 8px; }
+
+/* ── Print styles ─────────────────────────────────────── */
+@media print {
+  body * { visibility: hidden; }
+  #printContainer, #printContainer * { visibility: visible; }
+  #printContainer { display: block !important; position: absolute; inset: 0; background: white; }
+}
+
+
+.flashcard-container {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+.flashcard-container.active {
+  display: block;
+}
+.flashcard-flip {
+  perspective: 1000px;
+  margin-bottom: 24px;
+}
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  min-height: 280px;
+  background: linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95));
+  border: 1px solid rgba(122,208,224,.3);
+  border-radius: 18px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .3s ease;
+  transform-style: preserve-3d;
+}
+.flashcard-inner:hover {
+  border-color: rgba(122,208,224,.6);
+  background: linear-gradient(160deg, rgba(14,34,48,.9), rgba(11,27,36,1));
+}
+.flashcard-label {
+  font-size: 0.72rem;
+  color: var(--muted2);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.flashcard-content {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--good);
+  line-height: 1.6;
+  text-shadow: 0 0 20px rgba(110,247,200,.15);
+}
+.flashcard-def-en {
+  font-size: 1.1rem;
+  color: rgba(231,251,255,.9);
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+.flashcard-def-zh {
+  font-size: 1.05rem;
+  color: var(--muted);
+  font-weight: 500;
+  line-height: 1.7;
+}
+.flashcard-hint {
+  font-size: 0.75rem;
+  color: var(--muted2);
+  margin-top: 12px;
+  font-style: italic;
+}
+.flashcard-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.flashcard-progress {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 700;
+  min-width: 60px;
+}
+.flashcard-btn {
+  background: rgba(122,208,224,.1);
+  border: 1px solid var(--s60);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text);
+  cursor: pointer;
+  transition: all .15s;
+}
+.flashcard-btn:hover:not(:disabled) {
+  background: rgba(122,208,224,.2);
+  border-color: var(--s60);
+}
+.flashcard-btn:disabled {
+  opacity: .35;
+  cursor: not-allowed;
+}
+
+</style>
+</head>
+<body>
+
+<div id="toast"></div>
+
+<div class="wrapper">
+  <div class="app-header">
+    <h1>Words That Think: The Wonderful Wizard of Oz Edition</h1>
+    <div class="tagline">Journey down the yellow brick road and discover the vocabulary of courage, friendship, and home.</div>
+    <div class="book-credit">90 words &middot; 90 sentences &middot; L. Frank Baum's The Wonderful Wizard of Oz</div>
+    <div class="header-star-row">
+      <button class="header-badge" id="starredToggleBtn">⭐ Starred Words (<span id="starredCountHeader">0</span>)</button>
+      <button class="header-badge print-btn" id="printBtn" onclick="openPrintModal()">🖨️ Print</button>
+    </div>
+  </div>
+
+  <div class="group-nav">
+    <button class="nav-pill" id="prevGroupBtn">← Prev</button>
+    <div class="group-nav-center">
+      <div class="group-label">Group</div>
+      <div class="group-num" id="groupNumDisplay">1 / 10</div>
+      <div class="group-dots" id="groupDots"></div>
+    </div>
+    <button class="nav-pill" id="nextGroupBtn">Next →</button>
+  </div>
+
+  <div class="word-nav">
+    <button class="nav-pill" id="prevWordBtn">←</button>
+    <div class="word-nav-center">
+      <div class="word-counter">Word <span id="wordNumDisplay">1</span> / <span id="groupSizeDisplay">10</span></div>
+      <button class="icon-btn" id="starBtn" title="Star this word">☆</button>
+      <button class="icon-btn" id="speakBtn" title="Hear pronunciation">🔊</button>
+    </div>
+    <button class="nav-pill" id="nextWordBtn">Next →</button>
+  </div>
+
+  <div class="word-card" id="wordCard">
+    <div class="word-card-top">
+      <div class="word-left">
+        <div class="word-display" id="wordDisplay">—</div>
+        <div class="pron-row">
+          <span class="pron-text" id="pronDisplay">—</span>
+          <button class="speak-btn" id="speakBtn2">🔊 Hear it</button>
+        </div>
+      </div>
+      <div class="chapter-badge" id="chapterBadge">—</div>
+    </div>
+
+    <div class="definition-block">
+      <div class="def-en" id="defEn">—</div>
+      <div class="def-zh" id="defZh">—</div>
+    </div>
+
+    <div class="synan-block" id="synanBlock">
+      <div class="synan-group">
+        <div class="synan-label syn">Synonyms</div>
+        <div class="synan-chips" id="synChips"></div>
+      </div>
+      <div class="synan-group">
+        <div class="synan-label ant">Antonyms</div>
+        <div class="synan-chips" id="antChips"></div>
+      </div>
+    </div>
+
+    <div class="sentence-tab-row">
+      <button class="sent-tab active" id="tabNovel">📖 Source Sentence</button>
+      <button class="sent-tab" id="tabAI">💡 Example</button>
+      <button class="sent-tab" id="tabFlashcard">📇 Flashcard</button>
+    </div>
+
+    <div class="sentence-content" id="sentenceContent">
+      <div style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px;">
+        <div class="sent-en" id="sentEn" style="flex: 1;">—</div>
+        <button id="sentenceHearBtn" style="flex-shrink: 0; padding: 8px 14px; background: rgba(122,208,224,.12); border: 1.5px solid rgba(122,208,224,.4); border-radius: 8px; color: #7AD0E0; cursor: pointer; font-weight: 600; white-space: nowrap; font-size: 0.85rem;" onclick="const e=document.getElementById(\'sentEn\');if(e){let t=e.textContent;if(t&&t!==\'—\'){t=t.replace(/<[^>]*>/g,\'\');if(t.trim())speak(t);}}">🔊 Hear</button>
+      </div>
+      <div class="sent-zh" id="sentZh">—</div>
+      <div class="sent-source" id="sentSource">—</div>
+    </div>
+
+    <div class="flashcard-container" id="flashcardContainer">
+      <div class="flashcard-nav">
+        <button class="flashcard-btn" id="flashPrevBtn" title="Previous card">← Prev</button>
+        <div class="flashcard-progress" id="flashProgress">1 / 10</div>
+        <button class="flashcard-btn" id="flashNextBtn" title="Next card">Next →</button>
+      </div>
+      <div class="flashcard-flip" id="flashFlip">
+        <div class="flashcard-inner" id="flashInner" onclick="toggleFlashcard()">
+          <div class="flashcard-label" id="flashLabel">Word</div>
+          <div class="flashcard-content" id="flashContent">—</div>
+          <div class="flashcard-hint">Tap to reveal</div>
+        </div>
+      </div>
+      <button class="icon-btn" id="flashStarBtn" title="Star this word" style="margin-bottom: 14px;">⭐</button>
+    </div>
+
+    <div class="my-sentences-block">
+      <div class="my-sent-header">
+        <span class="my-sent-title">✍️ My Sentences</span>
+        <span class="my-sent-counter" id="mySentCounter">0 / 3</span>
+      </div>
+      <div class="my-sent-input-row">
+        <input type="text" class="my-sent-input" id="mySentInput"
+          placeholder="Write your own sentence using this word…"
+          autocomplete="off" autocorrect="off" spellcheck="false">
+        <button class="my-sent-save-btn" id="mySentSaveBtn">Save</button>
+      </div>
+      <div class="my-sent-list" id="mySentList"></div>
+    </div>
+  </div>
+
+  <div class="quiz-section" id="quizSection">
+    <div class="quiz-header" id="quizHeader">
+      <div class="quiz-header-left">
+        <div>
+          <div class="quiz-title">📝 Group Quiz</div>
+          <div class="quiz-subtitle" id="quizSubtitle">Part 1: Choose · Part 2: Spell</div>
+        </div>
+        <div class="quiz-score-badge" id="quizScoreBadge">—</div>
+      </div>
+      <div>
+        <span class="quiz-toggle-icon" id="quizToggleIcon">▾</span>
+      </div>
+    </div>
+    <div class="quiz-body" id="quizBody">
+      <div class="quiz-start-area" id="quizStartArea">
+        <div class="quiz-start-desc" id="quizStartDesc">Test yourself on Group 1. Fill in the blanks using words from this group.</div>
+        <button class="quiz-start-btn" id="quizStartBtn">Start Quiz</button>
+        <button class="quiz-skip-btn" id="quizSkipBtn">Skip</button>
+      </div>
+      <div id="quizQuestionArea" style="display:none;">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+        <div class="quiz-q-num" id="quizQNum">Question 1 / 10</div>
+
+        <div id="quizPhase1">
+          <div class="quiz-phase-label">📖 Choose the word — Orwell's sentence</div>
+          <div class="quiz-sentence" id="quizSentence">—</div>
+          <div class="quiz-choices" id="quizChoices"></div>
+          <div class="quiz-feedback" id="quizFeedback"></div>
+        </div>
+
+        <div id="quizPhase2" style="display:none;">
+          <div class="quiz-phase-label">💡 Spell the word — AI example sentence</div>
+          <div class="quiz-sentence" id="qSpellSentence">—</div>
+          <div class="spell-boxes" id="qSpellBoxes"></div>
+          <div class="spell-input-row">
+            <input type="text" class="spell-input" id="qSpellInput"
+              placeholder="type the word…"
+              autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <button class="spell-check-btn" id="qSpellCheckBtn">Check</button>
+          </div>
+          <button class="spell-reveal-btn" id="qSpellRevealBtn">Show answer</button>
+          <div class="quiz-feedback" id="qSpellFeedback"></div>
+        </div>
+
+        <button class="quiz-next-btn" id="quizNextBtn" style="display:none;">Next →</button>
+      </div>
+      <div class="quiz-result" id="quizResult">
+        <div class="quiz-result-score" id="quizResultScore">—</div>
+        <div class="quiz-result-label" id="quizResultLabel">—</div>
+        <div class="quiz-result-btns">
+          <button class="quiz-retry-btn" id="quizRetryBtn">↻ Retry Quiz</button>
+          <button class="quiz-skip-btn" id="quizCloseBtn">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="starred-section" id="starredSection">
+    <div class="starred-header" id="starredHeader">
+      <div class="starred-header-left">
+        <div class="starred-title">⭐ Starred Words</div>
+        <div class="starred-count" id="starredCount">0</div>
+      </div>
+      <span class="quiz-toggle-icon" id="starredToggleIcon">▾</span>
+    </div>
+    <div class="starred-body" id="starredBody">
+      <div class="starred-list" id="starredList"></div>
+
+      <div class="starred-quiz-wrap" id="starredQuizWrap">
+        <div class="starred-quiz-divider"></div>
+        <div class="sq-start-area" id="sqStartArea">
+          <div class="sq-desc" id="sqDesc">Star 5 or more words to unlock your personal quiz.</div>
+          <button class="quiz-start-btn" id="sqStartBtn" style="display:none;">⭐ Quiz My Starred Words</button>
+          <div class="sq-unlock-hint" id="sqUnlockHint">(<span id="sqStarredCount">0</span> / 5 starred so far)</div>
+        </div>
+        <div id="sqQuestionArea" style="display:none;">
+          <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="sqProgressFill"></div></div>
+          <div class="quiz-q-num" id="sqQNum">Question 1 / ?</div>
+          <div class="quiz-sentence" id="sqSentence">—</div>
+          <div class="quiz-choices" id="sqChoices"></div>
+          <div class="quiz-feedback" id="sqFeedback"></div>
+          <button class="quiz-next-btn" id="sqNextBtn">Next →</button>
+        </div>
+        <div class="quiz-result" id="sqResult" style="display:none;">
+          <div class="quiz-result-score" id="sqResultScore">—</div>
+          <div class="quiz-result-label" id="sqResultLabel">—</div>
+          <div class="quiz-result-btns">
+            <button class="quiz-retry-btn" id="sqRetryBtn">↻ Retry</button>
+            <button class="quiz-skip-btn" id="sqResetBtn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-author">Created by Daniel Wang · Words from The Wonderful Wizard of Oz (1900) by L. Frank Baum · For Educational Use · © 2026</div>
+    <div class="footer-quote">“There is no place like home.”<br>— L. Frank Baum, <em>The Wonderful Wizard of Oz</em></div>
+  </footer>
+</div>
+
+<script>
+// ============================================================
+// PASTE YOUR COMPLETE VOCAB ARRAY HERE (ALL 100 WORDS)
+// ============================================================
+// ============================================================
+const BOOK_CONFIG = {
+  "title": "Words That Think: The Wonderful Wizard of Oz Edition",
+  "bookName": "The Wonderful Wizard of Oz",
+  "author": "L. Frank Baum",
+  "year": "1900",
+  "tagline": "Journey down the yellow brick road and discover the vocabulary of courage, friendship, and home."
+};
+const VOCAB = [
+  {
+    "word": "garret",
+    "pron": "/ˈɡærət/",
+    "pos": "n.",
+    "def_en": "A room or space just below the roof of a house; an attic",
+    "def_zh": "阁楼；屋顶室",
+    "quote_en": "There was no garret at all, and no cellar—except a small hole dug in the ground, called a cyclone cellar, where the family could go in case one of those great whirlwinds arose. (Chapter 1)",
+    "quote_zh": "这里根本没有阁楼，也没有地窖——只有一个在地上挖的小洞，叫做龙卷风地窖，当那些巨大的旋风刮起时，家人可以躲进去。",
+    "ex_en": "Even the smallest garret can become a kingdom when filled with dreams and imagination.",
+    "ex_zh": "即使是最小的阁楼，当充满梦想和想象力时，也能变成一个王国。"
+  },
+  {
+    "word": "gaunt",
+    "pron": "/ɡɔːnt/",
+    "pos": "adj.",
+    "def_en": "Very thin, especially from illness, hunger, or suffering; bony and hollow-faced",
+    "def_zh": "憔悴的；消瘦的；骨瘦如柴的",
+    "quote_en": "She was thin and gaunt, and never smiled now. (Chapter 1)",
+    "quote_zh": "她瘦削憔悴，现在从不笑了。",
+    "ex_en": "Kindness can transform even the gauntest heart into something beautiful and full of light.",
+    "ex_zh": "善意能让即使是最憔悴的心灵也变得美丽而充满光明。"
+  },
+  {
+    "word": "stately",
+    "pron": "/ˈsteɪtli/",
+    "pos": "adj.",
+    "def_en": "Majestic, dignified, and impressive in appearance or manner",
+    "def_zh": "庄严的；宏伟的；高贵的",
+    "quote_en": "There were lovely patches of greensward all about, with stately trees bearing rich and luscious fruits. (Chapter 2)",
+    "quote_zh": "四周是一片片可爱的绿地，庄严的树木上结满了丰硕甜美的果实。",
+    "ex_en": "A stately oak grows from a tiny acorn, reminding us that greatness begins with small beginnings.",
+    "ex_zh": "庄严的橡树从小小的橡子长成，提醒我们伟大始于微小的开端。"
+  },
+  {
+    "word": "plumage",
+    "pron": "/ˈpluːmɪdʒ/",
+    "pos": "n.",
+    "def_en": "A bird's feathers collectively",
+    "def_zh": "（鸟类的）全身羽毛",
+    "quote_en": "Birds with rare and brilliant plumage sang and fluttered in the trees and bushes. (Chapter 2)",
+    "quote_zh": "羽毛稀有而艳丽的鸟儿在树木和灌木丛中歌唱飞舞。",
+    "ex_en": "True beauty, like a bird's plumage, shines brightest when it is free and natural.",
+    "ex_zh": "真正的美，就像鸟类的羽毛，在自由自然时最为闪耀。"
+  },
+  {
+    "word": "bondage",
+    "pron": "/ˈbɒndɪdʒ/",
+    "pos": "n.",
+    "def_en": "The state of being a slave; servitude; captivity",
+    "def_zh": "奴役；束缚；监禁",
+    "quote_en": "She has held all the Munchkins in bondage for many years, making them slave for her night and day. (Chapter 2)",
+    "quote_zh": "多年来她一直奴役着所有芒奇金人，让他们日夜为她劳作。",
+    "ex_en": "Friendship breaks the bondage of loneliness, linking heart to heart across any distance.",
+    "ex_zh": "友谊打破孤独的束缚，跨越任何距离将心与心相连。"
+  },
+  {
+    "word": "gingham",
+    "pron": "/ˈɡɪŋəm/",
+    "pos": "n.",
+    "def_en": "A lightweight, plain-woven cotton cloth, typically checked or striped",
+    "def_zh": "方格棉布；条纹棉布",
+    "quote_en": "It was gingham, with checks of white and blue; and although the blue was somewhat faded with many washings, it was still a pretty frock. (Chapter 3)",
+    "quote_zh": "那是件蓝白格子的棉布裙；虽然蓝色因多次洗涤有些褪色，但仍然是件漂亮的连衣裙。",
+    "ex_en": "A gingham dress may fade with time, but the memories woven into it grow brighter with each passing year.",
+    "ex_zh": "格子棉布裙会随时间褪色，但编织在其中的记忆却会随着岁月的流逝而愈发明亮。"
+  },
+  {
+    "word": "hearty",
+    "pron": "/ˈhɑːti/",
+    "pos": "adj.",
+    "def_en": "Wholesome and substantial; robust and enthusiastic",
+    "def_zh": "丰盛的； hearty； hearty",
+    "quote_en": "Dorothy ate a hearty supper and was waited upon by the rich Munchkin himself, whose name was Boq. (Chapter 3)",
+    "quote_zh": "多萝西吃了一顿丰盛的晚餐，由富有的芒奇金人博克亲自招待。",
+    "ex_en": "A hearty laugh shared among friends is medicine that no pharmacy can match.",
+    "ex_zh": "朋友间爽朗的笑声是任何药房都无法比拟的良药。"
+  },
+  {
+    "word": "settee",
+    "pron": "/seˈtiː/",
+    "pos": "n.",
+    "def_en": "A medium-sized sofa with a back and arms",
+    "def_zh": "中型沙发；长椅",
+    "quote_en": "Then she sat upon a settee and watched the people dance. (Chapter 3)",
+    "quote_zh": "然后她坐在长椅上，看着人们跳舞。",
+    "ex_en": "Home is where a worn settee welcomes you after every journey, no matter how far you roam.",
+    "ex_zh": "家就是无论你走多远，一张旧沙发总是在旅程后欢迎你的地方。"
+  },
+  {
+    "word": "tedious",
+    "pron": "/ˈtiːdiəs/",
+    "pos": "adj.",
+    "def_en": "Too long, slow, or dull; tiresome or monotonous",
+    "def_zh": "冗长乏味的；令人生厌的",
+    "quote_en": "“I’m not feeling well,” said the Scarecrow, with a smile, “for it is very tedious being perched up here night and day to scare away crows.” (Chapter 3)",
+    "quote_zh": "“我感觉不太好，”稻草人笑着说，“因为日夜待在这里赶乌鸦，实在是太无聊了。”",
+    "ex_en": "Even the most tedious task becomes meaningful when done with love and purpose.",
+    "ex_zh": "即使是再乏味的任务，只要带着爱和目的去做，也会变得有意义。"
+  },
+  {
+    "word": "oblige",
+    "pron": "/əˈblaɪdʒ/",
+    "pos": "v.",
+    "def_en": "To do something as a favor or service; to bind by a promise or duty",
+    "def_zh": "帮忙；施恩惠；迫使",
+    "quote_en": "“If you will please take away the pole I shall be greatly obliged to you.” (Chapter 3)",
+    "quote_zh": "“如果你能把杆子拿走，我将不胜感激。”",
+    "ex_en": "A true friend will oblige not from duty, but from the joy of giving.",
+    "ex_zh": "真正的朋友伸出援手不是出于责任，而是出于给予的快乐。"
+  },
+  {
+    "word": "mishap",
+    "pron": "/ˈmɪshæp/",
+    "pos": "n.",
+    "def_en": "An unlucky accident or minor misfortune",
+    "def_zh": "不幸事故；倒霉事；小意外",
+    "quote_en": "It never hurt him, however, and Dorothy would pick him up and set him upon his feet again, while he joined her in laughing merrily at his own mishap. (Chapter 4)",
+    "quote_zh": "不过这并没有伤到他，多萝西会把他扶起来重新站好，而他也跟着她一起为自己的小意外开心地大笑。",
+    "ex_en": "Every mishap carries within it a lesson, waiting to turn misfortune into wisdom.",
+    "ex_zh": "每一次不幸都蕴含着教训，等待着将厄运转化为智慧。"
+  },
+  {
+    "word": "daunt",
+    "pron": "/dɔːnt/",
+    "pos": "v.",
+    "def_en": "To make someone feel intimidated or apprehensive",
+    "def_zh": "使胆怯；使气馁；使畏惧",
+    "quote_en": "After this the enchanted axe cut off my arms, one after the other; but, nothing daunted, I had them replaced with tin ones. (Chapter 5)",
+    "quote_zh": "之后，那把被施了魔法的斧头一个接一个地砍掉了我的胳膊；但我毫不气馁，用铁皮胳膊替换了它们。",
+    "ex_en": "Challenges may daunt us for a moment, but courage within conquers fear without.",
+    "ex_zh": "挑战或许会让我们一时胆怯，但内心的勇气终将战胜外在的恐惧。"
+  },
+  {
+    "word": "heedless",
+    "pron": "/ˈhiːdləs/",
+    "pos": "adj.",
+    "def_en": "Showing a reckless lack of attention or care; careless",
+    "def_zh": "不注意的；不加小心的；粗心大意的",
+    "quote_en": "Dorothy, fearing Toto would be killed, and heedless of danger, rushed forward and slapped the Lion upon his nose as hard as she could. (Chapter 6)",
+    "quote_zh": "多萝西担心托托会被咬死，不顾危险，冲上前去，用尽全力扇了狮子一巴掌。",
+    "ex_en": "Heedless courage without wisdom may lead to peril, but courage guided by love leads to triumph.",
+    "ex_zh": "不计后果的勇气若缺乏智慧可能会招致危险，但由爱指引的勇气则通向胜利。"
+  },
+  {
+    "word": "retort",
+    "pron": "/rɪˈtɔːt/",
+    "pos": "v.",
+    "def_en": "To reply sharply or in a clever, witty manner",
+    "def_zh": "反驳；回嘴；顶嘴",
+    "quote_en": "“No, but you tried to,” she retorted. “You are nothing but a big coward.” (Chapter 6)",
+    "quote_zh": "“不，但你想咬他，”她反驳道，“你不过是个大懦夫。”",
+    "ex_en": "Kindness, not a sharp retort, is the truest measure of a noble heart.",
+    "ex_zh": "善意而非尖锐的反驳，才是衡量高尚心灵的真正标准。"
+  },
+  {
+    "word": "blunt",
+    "pron": "/blʌnt/",
+    "pos": "adj.",
+    "def_en": "Having a worn-down edge or point; not sharp; also, being direct and frank",
+    "def_zh": "钝的；不锋利的；直率的",
+    "quote_en": "“That’s why he nearly blunted my claws,” said the Lion. (Chapter 6)",
+    "quote_zh": "“这就是为什么他几乎把我的爪子弄钝了，”狮子说。",
+    "ex_en": "Honesty need not be blunt to be true; gentleness softens even the hardest truths.",
+    "ex_zh": "诚实不必直率才真实；温柔能使最艰难的事实也变得柔和。"
+  },
+  {
+    "word": "unbearable",
+    "pron": "/ʌnˈbeərəbl/",
+    "pos": "adj.",
+    "def_en": "Not able to be endured or tolerated",
+    "def_zh": "难以忍受的；无法容忍的",
+    "quote_en": "“Then, if you don’t mind, I’ll go with you,” said the Lion, “for my life is simply unbearable without a bit of courage.” (Chapter 6)",
+    "quote_zh": "“那么，如果你不介意，我跟你们一起去，”狮子说，“因为没有一点勇气，我的生活简直难以忍受。”",
+    "ex_en": "Hope makes the unbearable bearable, turning shadows into paths toward light.",
+    "ex_zh": "希望让难以承受之事变得可以承受，将阴影转化为通往光明的道路。"
+  },
+  {
+    "word": "mar",
+    "pron": "/mɑːr/",
+    "pos": "v.",
+    "def_en": "To spoil, damage, or impair the quality or perfection of something",
+    "def_zh": "损坏；破坏；毁坏",
+    "quote_en": "During the rest of that day there was no other adventure to mar the peace of their journey. (Chapter 6)",
+    "quote_zh": "那天余下的时间里，没有其他冒险来破坏他们旅途的平静。",
+    "ex_en": "Let no disagreement mar the bonds of friendship; a kind word heals more than silence ever could.",
+    "ex_zh": "不要让分歧破坏友谊的纽带；一句友善的话语比沉默更能治愈人心。"
+  },
+  {
+    "word": "gulf",
+    "pron": "/ɡʌlf/",
+    "pos": "n.",
+    "def_en": "A deep, wide chasm or abyss; a large difference or division between people or things",
+    "def_zh": "深沟；鸿沟；巨大的差异",
+    "quote_en": "They saw before them a great ditch that crossed the road and divided the forest as far as they could see on either side. It was a very wide ditch... “I think I could jump over it,” said the Cowardly Lion. (Chapter 7)",
+    "quote_zh": "他们看见前面有一条横穿道路的大沟渠，向两边延伸，目力所及之处将森林一分为二。这条沟渠非常宽……“我想我能跳过去，”胆小狮说。",
+    "ex_en": "A gulf may separate us, but friendship builds bridges where none existed before.",
+    "ex_zh": "鸿沟或许将我们分开，但友谊能架起从前不存在的桥梁。"
+  },
+  {
+    "word": "industrious",
+    "pron": "/ɪnˈdʌstriəs/",
+    "pos": "adj.",
+    "def_en": "Diligent and hard-working; characterized by steady, earnest effort",
+    "def_zh": "勤奋的；勤劳的；刻苦的",
+    "quote_en": "But it takes time to make a raft, even when one is as industrious and untiring as the Tin Woodman. (Chapter 7)",
+    "quote_zh": "但造木筏需要时间，即使一个人像铁皮人一样勤奋不知疲倦。",
+    "ex_en": "An industrious spirit turns dreams into reality, one small step at a time.",
+    "ex_zh": "勤奋的精神将梦想变为现实，一步一个脚印。"
+  },
+  {
+    "word": "beckon",
+    "pron": "/ˈbekən/",
+    "pos": "v.",
+    "def_en": "To summon or signal someone, typically by a gesture; to seem attractive or inviting",
+    "def_zh": "招手示意；召唤；吸引",
+    "quote_en": "Before them was a lovely, sunny country that seemed to beckon them on to the Emerald City. (Chapter 8)",
+    "quote_zh": "他们面前是一个可爱、阳光明媚的国度，似乎在召唤他们前往翡翠城。",
+    "ex_en": "Adventure beckons to the brave, promising treasures found not in gold but in growth.",
+    "ex_zh": "冒险向勇敢者招手，承诺的宝藏不在黄金中，而在成长里。"
+  },
+  {
+    "word": "wistfully",
+    "pron": "/ˈwɪstfəli/",
+    "pos": "adv.",
+    "def_en": "In a thoughtful, yearning, or sadly longing manner",
+    "def_zh": "渴望地；留恋地；惆怅地",
+    "quote_en": "They sat down upon the bank and gazed wistfully at the Scarecrow until a Stork flew by. (Chapter 8)",
+    "quote_zh": "他们坐在岸边，惆怅地望着稻草人，直到一只鹳鸟飞过。",
+    "ex_en": "Those who look wistfully at the past forget that tomorrow holds wonders yet unseen.",
+    "ex_zh": "留恋地回望过去的人，忘记了明天还蕴藏着尚未得见的奇迹。"
+  },
+  {
+    "word": "indignantly",
+    "pron": "/ɪnˈdɪɡnəntli/",
+    "pos": "adv.",
+    "def_en": "In a manner expressing anger or annoyance at unfair treatment",
+    "def_zh": "愤慨地；义愤填膺地；气愤地",
+    "quote_en": "“Only a mouse!” cried the little animal, indignantly. “Why, I am a Queen—the Queen of all the Field Mice!” (Chapter 9)",
+    "quote_zh": "“只是一只老鼠！”小动物愤慨地叫道，“我可是女王——所有田鼠的女王！”",
+    "ex_en": "Speak indignantly against injustice, but let love guide your words toward healing.",
+    "ex_zh": "愤慨地声讨不公，但让爱引导你的话语走向治愈。"
+  },
+  {
+    "word": "dignified",
+    "pron": "/ˈdɪɡnɪfaɪd/",
+    "pos": "adj.",
+    "def_en": "Having or showing a composed, serious, and worthy manner",
+    "def_zh": "庄重的；有尊严的；高贵的",
+    "quote_en": "But the Scarecrow told her about everything, and turning to the dignified little Mouse, he said: “Permit me to introduce to you her Majesty, the Queen.” (Chapter 9)",
+    "quote_zh": "但稻草人把一切都告诉了她，然后转向那只庄重的小老鼠说：“请允许我向您介绍女王陛下。”",
+    "ex_en": "A dignified soul stands tall not by looking down on others, but by lifting them up.",
+    "ex_zh": "高贵的灵魂昂首挺立，不是通过俯视他人，而是通过提升他人。"
+  },
+  {
+    "word": "fragrance",
+    "pron": "/ˈfreɪɡrəns/",
+    "pos": "n.",
+    "def_en": "A pleasant, sweet, or delicate smell",
+    "def_zh": "香气；芳香；芬芳",
+    "quote_en": "It was some time before the Cowardly Lion awakened, for he had lain among the poppies a long while, breathing in their deadly fragrance. (Chapter 10)",
+    "quote_zh": "过了好一会儿胆小狮才醒来，因为他在罂粟花丛中躺了很久，吸入它们致命的香气。",
+    "ex_en": "The fragrance of kindness lingers long after the deed is done, touching hearts unseen.",
+    "ex_zh": "善意的芬芳在行动完成后久久不散，触动着看不见的心灵。"
+  },
+  {
+    "word": "perplexity",
+    "pron": "/pəˈpleksəti/",
+    "pos": "n.",
+    "def_en": "The state of being confused, puzzled, or uncertain",
+    "def_zh": "困惑；茫然；费解",
+    "quote_en": "The man was so surprised at this answer that he sat down to think it over. “It has been many years since anyone asked me to see Oz,” he said, shaking his head in perplexity. (Chapter 10)",
+    "quote_zh": "这个人对这个回答感到非常惊讶，坐下来仔细思考。“已经很多年没有人要求见奥兹了，”他困惑地摇摇头说。",
+    "ex_en": "In moments of perplexity, the quiet voice within often holds the answers we seek.",
+    "ex_zh": "在困惑的时刻，内心安静的声音往往藏有我们寻求的答案。"
+  },
+  {
+    "word": "portal",
+    "pron": "/ˈpɔːtl/",
+    "pos": "n.",
+    "def_en": "A doorway, gate, or entrance, especially a grand or impressive one",
+    "def_zh": "大门；入口；门户",
+    "quote_en": "They all followed him through the portal into the streets of the Emerald City. (Chapter 10)",
+    "quote_zh": "他们都跟着他穿过大门，进入翡翠城的街道。",
+    "ex_en": "Education is the portal through which we step from darkness into the light of understanding.",
+    "ex_zh": "教育是我们从黑暗步入理解之光的大门。"
+  },
+  {
+    "word": "assorted",
+    "pron": "/əˈsɔːtɪd/",
+    "pos": "adj.",
+    "def_en": "Of various different kinds; mixed or miscellaneous",
+    "def_zh": "各式各样的；混杂的；分类的",
+    "quote_en": "They looked at Dorothy and her strangely assorted company with wondering eyes. (Chapter 11)",
+    "quote_zh": "他们用惊异的眼神看着多萝西和她那奇特的、各式各样的伙伴。",
+    "ex_en": "The world is an assorted tapestry of souls, each thread essential to the beauty of the whole.",
+    "ex_zh": "世界是一幅由各式各样的灵魂织成的挂毯，每一根线都对整体的美丽至关重要。"
+  },
+  {
+    "word": "prosperous",
+    "pron": "/ˈprɒspərəs/",
+    "pos": "adj.",
+    "def_en": "Successful, flourishing, and wealthy; favorable",
+    "def_zh": "繁荣的；兴旺的；成功的",
+    "quote_en": "Everyone seemed happy and contented and prosperous. (Chapter 11)",
+    "quote_zh": "每个人看起来都快乐、满足且兴旺。",
+    "ex_en": "A prosperous life is measured not by gold in hand, but by love in heart and kindness shared.",
+    "ex_zh": "繁荣的生活不是以手中的黄金衡量，而是以心中的爱和分享的善意衡量。"
+  },
+  {
+    "word": "dominion",
+    "pron": "/dəˈmɪniən/",
+    "pos": "n.",
+    "def_en": "Sovereignty, control, or rule over a territory or people",
+    "def_zh": "统治权；支配；领土",
+    "quote_en": "“I am only a Scarecrow, stuffed with straw. Therefore I have no brains, and I come to you praying that you will put brains in my head instead of straw, so that I may become as much a man as any other in your dominions.” (Chapter 11)",
+    "quote_zh": "“我只是一个塞满稻草的稻草人。因此我没有头脑，我来祈求您给我的脑袋装上头脑而不是稻草，这样我就能成为您领土上像其他人一样的人。”",
+    "ex_en": "True dominion over self is mightier than any crown upon a king's head.",
+    "ex_zh": "对自我的真正主宰比国王头上的任何王冠都更强大。"
+  },
+  {
+    "word": "bestow",
+    "pron": "/bɪˈstəʊ/",
+    "pos": "v.",
+    "def_en": "To present or give something as a gift or honor",
+    "def_zh": "授予；赠予；赐予",
+    "quote_en": "“If you will kill for me the Wicked Witch of the West, I will bestow upon you a great many brains, and such good brains that you will be the wisest man in all the Land of Oz.” (Chapter 11)",
+    "quote_zh": "“如果你为我杀死西方恶女巫，我将赐予你许多头脑，而且是极好的头脑，让你成为整个奥兹国最聪明的人。”",
+    "ex_en": "The greatest gift we can bestow upon another is the belief that they are capable of greatness.",
+    "ex_zh": "我们能给予他人最伟大的礼物，是相信他们能够成就伟大。"
+  },
+  {
+    "word": "compel",
+    "pron": "/kəmˈpel/",
+    "pos": "v.",
+    "def_en": "To force or drive someone to do something",
+    "def_zh": "强迫；迫使；驱使",
+    "quote_en": "“And if he is the lovely Lady, I shall pretend to spring upon her, and so compel her to do my bidding.” (Chapter 11)",
+    "quote_zh": "“如果他是那位可爱的女士，我就假装扑向她，从而迫使她听从我的吩咐。”",
+    "ex_en": "Love compels no one; it invites, it welcomes, it waits with patient hope.",
+    "ex_zh": "爱不强迫任何人；它邀请，它欢迎，它带着耐心的希望等待。"
+  },
+  {
+    "word": "singe",
+    "pron": "/sɪndʒ/",
+    "pos": "v.",
+    "def_en": "To burn superficially; to scorch or lightly burn the surface",
+    "def_zh": "烧焦；烫焦；轻微烧灼",
+    "quote_en": "The heat was so intense that it singed his whiskers, and he crept back tremblingly to a spot nearer the door. (Chapter 11)",
+    "quote_zh": "热浪如此强烈，烫焦了他的胡须，他颤抖着退回到靠近门口的地方。",
+    "ex_en": "Fear may singe our courage, but it cannot extinguish the flame within that rises to meet the day.",
+    "ex_zh": "恐惧或许会烧焦我们的勇气，但无法熄灭内心迎接每一天的火焰。"
+  },
+  {
+    "word": "cunning",
+    "pron": "/ˈkʌnɪŋ/",
+    "pos": "adj.",
+    "def_en": "Skillful in achieving one's ends through deceit or cleverness; sly",
+    "def_zh": "狡猾的；诡诈的；灵巧的",
+    "quote_en": "But the wicked creature was very cunning, and she finally thought of a trick that would give her what she wanted. (Chapter 12)",
+    "quote_zh": "但这个邪恶的家伙非常狡猾，她终于想出了一个诡计，能得到她想要的东西。",
+    "ex_en": "Wisdom without cunning builds; cunning without wisdom destroys. Choose which you will cultivate.",
+    "ex_zh": "没有诡计的智慧建设；没有智慧的诡计毁灭。选择你要培养哪一种。"
+  },
+  {
+    "word": "plight",
+    "pron": "/plaɪt/",
+    "pos": "n.",
+    "def_en": "A difficult, dangerous, or unfortunate situation",
+    "def_zh": "困境；苦境；窘境",
+    "quote_en": "The Winkies lifted him tenderly in their arms, and carried him back to the Yellow Castle again, Dorothy shedding a few tears by the way at the sad plight of her old friend. (Chapter 13)",
+    "quote_zh": "温基人温柔地把他抱在怀里，抬回了黄城堡，多萝西一路上为老朋友的悲惨处境流下了几滴眼泪。",
+    "ex_en": "In every plight, look for the lesson hidden within; it is the seed of tomorrow's strength.",
+    "ex_zh": "在每一次困境中，寻找其中隐藏的教训；那是明日力量的种子。"
+  },
+  {
+    "word": "burnished",
+    "pron": "/ˈbɜːnɪʃt/",
+    "pos": "adj.",
+    "def_en": "Polished to make shiny; made bright and glossy by rubbing",
+    "def_zh": "擦亮的；磨光的；光亮的",
+    "quote_en": "Others polished the blade until all the rust was removed and it glistened like burnished silver. (Chapter 13)",
+    "quote_zh": "其他人将刀片打磨，直到所有锈迹都被去除，它像擦亮的银子一样闪闪发光。",
+    "ex_en": "A burnished spirit comes not from ease, but from trials overcome and lessons learned.",
+    "ex_zh": "熠熠生辉的精神不是来自安逸，而是来自克服的考验和学到的教训。"
+  },
+  {
+    "word": "determined",
+    "pron": "/dɪˈtɜːmɪnd/",
+    "pos": "adj.",
+    "def_en": "Having made a firm decision; resolute and unwavering",
+    "def_zh": "坚定的；果断的；决意的",
+    "quote_en": "Finding they were determined to go, the Winkies gave Toto and the Lion each a golden collar. (Chapter 13)",
+    "quote_zh": "发现他们决心要走，温基人给了托托和狮子各一个金项圈。",
+    "ex_en": "A determined heart finds paths where others see only walls.",
+    "ex_zh": "坚定的心灵能在别人只见墙壁的地方找到道路。"
+  },
+  {
+    "word": "plague",
+    "pron": "/pleɪɡ/",
+    "pos": "v.",
+    "def_en": "To cause continual trouble or distress to; to pester or harass",
+    "def_zh": "困扰；折磨；烦扰",
+    "quote_en": "“But if you are going to call the Winged Monkeys we must run away, for they are full of mischief and think it great fun to plague us.” (Chapter 14)",
+    "quote_zh": "“但如果你们要召唤飞猴，我们必须跑开，因为他们充满恶意，觉得折磨我们很有趣。”",
+    "ex_en": "Do not let doubt plague your dreams; let hope be the wind beneath your wings.",
+    "ex_zh": "不要让疑虑困扰你的梦想；让希望成为你翅膀下的风。"
+  },
+  {
+    "word": "hasten",
+    "pron": "/ˈheɪsən/",
+    "pos": "v.",
+    "def_en": "To move or act quickly; to hurry or accelerate",
+    "def_zh": "赶紧；匆忙；加速",
+    "quote_en": "The strange creatures set the travelers down carefully before the gate of the City, the King bowed low to Dorothy, and then flew swiftly away, followed by all his band. (Chapter 14)",
+    "quote_zh": "那些奇怪的生物小心翼翼地把旅行者们放在城门前，国王向多萝西深深鞠躬，然后迅速飞走了，他所有的随从紧随其后。",
+    "ex_en": "Patience ripens what haste would spoil; let growth take its natural time.",
+    "ex_zh": "耐心能成熟仓促会毁掉的东西；让成长顺其自然。"
+  },
+  {
+    "word": "deceive",
+    "pron": "/dɪˈsiːv/",
+    "pos": "v.",
+    "def_en": "To cause someone to believe something that is not true; to mislead",
+    "def_zh": "欺骗；误导；蒙蔽",
+    "quote_en": "“If I should go out of this Palace my people would soon discover I am not a Wizard, and then they would be vexed with me for having deceived them.” (Chapter 17)",
+    "quote_zh": "“如果我走出这座宫殿，我的人民很快就会发现我不是巫师，那么他们会因为我欺骗了他们而恼火。”",
+    "ex_en": "To deceive others is to build a prison; to live truthfully is to set oneself free.",
+    "ex_zh": "欺骗他人是建造一座监狱；真实地生活是让自己自由。"
+  },
+  {
+    "word": "abound",
+    "pron": "/əˈbaʊnd/",
+    "pos": "v.",
+    "def_en": "To exist in large numbers or great quantities; to be plentiful",
+    "def_zh": "大量存在；充满；丰富",
+    "quote_en": "It certainly is a beautiful place, abounding in jewels and precious metals, and every good thing that is needed to make one happy. (Chapter 15)",
+    "quote_zh": "这确实是一个美丽的地方，盛产珠宝和贵金属，以及让人快乐所需的一切好东西。",
+    "ex_en": "Kindness abounds where hearts are open; it multiplies with every gift it gives.",
+    "ex_zh": "善意在心灵敞开的地方丰富存在；它随着每一次给予而倍增。"
+  },
+  {
+    "word": "humbug",
+    "pron": "/ˈhʌmbʌɡ/",
+    "pos": "n.",
+    "def_en": "A fraudulent or deceptive act; a pretender or impostor",
+    "def_zh": "骗子；假话；虚伪的举动",
+    "quote_en": "“You’re more than that,” said the Scarecrow, in a grieved tone; “you’re a humbug.” “Exactly so!” declared the little man. (Chapter 15)",
+    "quote_zh": "“你不仅仅是那样，”稻草人悲伤地说，“你是个骗子。”“正是如此！”小个子男人宣称。",
+    "ex_en": "Better to be a humble truth-teller than a grand humbug wearing a borrowed crown.",
+    "ex_zh": "做一个谦卑的诚实者，胜过做一个戴着借来王冠的大骗子。"
+  },
+  {
+    "word": "engaged",
+    "pron": "/ɪnˈɡeɪdʒd/",
+    "pos": "adj.",
+    "def_en": "Busy or occupied; involved in an activity",
+    "def_zh": "忙碌的；从事的；占用的",
+    "quote_en": "The Scarecrow went in and found the little man sitting down by the window, engaged in deep thought. (Chapter 16)",
+    "quote_zh": "稻草人走进去，发现小个子男人正坐在窗边，陷入沉思。",
+    "ex_en": "A mind engaged in learning grows ever young; a heart engaged in giving grows ever rich.",
+    "ex_zh": "投入学习的心智永远年轻；投入给予的心灵永远丰盈。"
+  },
+  {
+    "word": "thoroughly",
+    "pron": "/ˈθʌrəli/",
+    "pos": "adv.",
+    "def_en": "In a complete, detailed, and careful manner",
+    "def_zh": "彻底地；详尽地；完全地",
+    "quote_en": "Having shaken them together thoroughly, he filled the top of the Scarecrow’s head with the mixture and stuffed the rest of the space with straw, to hold it in place. (Chapter 16)",
+    "quote_zh": "将它们彻底摇匀后，他把混合物装进了稻草人的头顶，然后用稻草填满剩余的空间，将其固定住。",
+    "ex_en": "Do one thing thoroughly, and you have done more than a thousand things half-heartedly.",
+    "ex_zh": "彻底做好一件事，胜过三心二意地做一千件事。"
+  },
+  {
+    "word": "fulfillment",
+    "pron": "/fʊlˈfɪlmənt/",
+    "pos": "n.",
+    "def_en": "The achievement of something desired or promised; satisfaction",
+    "def_zh": "实现；完成；满足",
+    "quote_en": "The Scarecrow was both pleased and proud at the fulfillment of his greatest wish, and having thanked Oz warmly he went back to his friends. (Chapter 16)",
+    "quote_zh": "稻草人对自己最大愿望的实现感到既高兴又自豪，他热情地感谢了奥兹，然后回到了朋友们身边。",
+    "ex_en": "True fulfillment lies not in what you gain, but in who you become along the way.",
+    "ex_zh": "真正的满足不在于你得到了什么，而在于一路上你成为了怎样的人。"
+  },
+  {
+    "word": "mourn",
+    "pron": "/mɔːn/",
+    "pos": "v.",
+    "def_en": "To feel or express sorrow, grief, or regret",
+    "def_zh": "哀悼；悲伤；痛惜",
+    "quote_en": "“Truly I should be ungrateful if I failed to mourn for the man who gave me my lovely heart.” (Chapter 18)",
+    "quote_zh": "“如果我不为那个给我这颗可爱心脏的人哀悼，那我真是忘恩负义。”",
+    "ex_en": "We mourn what we have lost, but let us also celebrate what we were given while it was ours.",
+    "ex_zh": "我们为失去的哀悼，但也让我们庆祝在拥有时被给予的一切。"
+  },
+  {
+    "word": "summon",
+    "pron": "/ˈsʌmən/",
+    "pos": "v.",
+    "def_en": "To call upon someone to be present; to gather or call forth",
+    "def_zh": "召唤；召集；传唤",
+    "quote_en": "The soldier was summoned and entered the Throne Room timidly, for while Oz was alive he never was allowed to come farther than the door. (Chapter 18)",
+    "quote_zh": "士兵被召唤来了，他胆怯地走进了王座室，因为奥兹在世时，他从未被允许走到比门口更远的地方。",
+    "ex_en": "When you summon your courage, you may discover it has been waiting for you all along.",
+    "ex_zh": "当你召唤勇气时，你可能会发现它一直在等着你。"
+  },
+  {
+    "word": "steeple",
+    "pron": "/ˈstiːpl/",
+    "pos": "n.",
+    "def_en": "A tall tower on a church, typically topped with a spire",
+    "def_zh": "教堂尖塔；尖顶",
+    "quote_en": "All they could see was a mass of towers and steeples behind the green walls, and high up above everything the spires and dome of the Palace of Oz. (Chapter 19)",
+    "quote_zh": "他们只能看到绿色城墙后面一片塔楼和尖顶，在所有建筑之上高高耸立着奥兹宫殿的尖塔和圆顶。",
+    "ex_en": "Like a steeple pointing heavenward, let your dreams rise above the ordinary.",
+    "ex_zh": "如同指向天空的尖塔，让你的梦想超越平凡。"
+  },
+  {
+    "word": "headlong",
+    "pron": "/ˈhedlɒŋ/",
+    "pos": "adv.",
+    "def_en": "In a rush; with reckless haste; headfirst",
+    "def_zh": "仓促地；鲁莽地；头朝前地",
+    "quote_en": "He walked forward to the tree, but just as he came under the first branches they bent down and twined around him, and the next minute he was raised from the ground and flung headlong among his fellow travelers. (Chapter 19)",
+    "quote_zh": "他朝那棵树走去，但就在他走到最初的树枝下时，树枝弯下来缠绕住他，下一刻他被从地上举起，头朝前扔到了同伴们中间。",
+    "ex_en": "Rushing headlong into a task may bring speed, but patience brings mastery.",
+    "ex_zh": "仓促投入任务或许能带来速度，但耐心带来精通。"
+  },
+  {
+    "word": "prim",
+    "pron": "/prɪm/",
+    "pos": "adj.",
+    "def_en": "Stiffly formal, proper, or neat; excessively concerned with correct behavior",
+    "def_zh": "一本正经的；拘谨的；端庄的",
+    "quote_en": "You’re quite as stiff and prim as if you’d eaten up a poker! (Chapter 20)",
+    "quote_zh": "你僵硬拘谨得就像吞了一根拨火棍！",
+    "ex_en": "A prim exterior may hide a wild heart; do not judge the book by its cover.",
+    "ex_zh": "一本正经的外表可能藏着一颗狂野的心；不要以貌取人。"
+  },
+  {
+    "word": "brittle",
+    "pron": "/ˈbrɪtl/",
+    "pos": "adj.",
+    "def_en": "Hard but easily broken; fragile; lacking warmth or depth",
+    "def_zh": "易碎的；脆弱的；冷淡的",
+    "quote_en": "“That was too bad,” said Dorothy, “but really I think we were lucky in not doing these little people more harm than breaking a cow’s leg and a church. They are all so brittle!” (Chapter 20)",
+    "quote_zh": "“那太糟糕了，”多萝西说，“但我真的认为我们还算幸运，除了弄断一条牛腿和一座教堂，没有给这些小人造成更多伤害。它们都太脆了！”",
+    "ex_en": "A brittle spirit shatters under pressure; a resilient heart bends but does not break.",
+    "ex_zh": "脆弱的精神在压力下破碎；坚韧的心灵会弯曲但不会折断。"
+  },
+  {
+    "word": "rank",
+    "pron": "/ræŋk/",
+    "pos": "adj.",
+    "def_en": "Growing vigorously and thickly; luxuriant; also, strong and unpleasant in odor",
+    "def_zh": "茂密的；疯长的；难闻的",
+    "quote_en": "After climbing down from the china wall the travelers found themselves in a disagreeable country, full of bogs and marshes and covered with tall, rank grass. (Chapter 21)",
+    "quote_zh": "从瓷器墙上爬下来后，旅行者们发现自己来到了一个令人不快的地方，到处都是沼泽，覆盖着高大茂密的野草。",
+    "ex_en": "Even rank weeds give way to the gardener's patience; what is wild can be transformed.",
+    "ex_zh": "即使是茂密的野草也会在园丁的耐心下让路；野蛮的可以被改造。"
+  },
+  {
+    "word": "assemblage",
+    "pron": "/əˈsemblɪdʒ/",
+    "pos": "n.",
+    "def_en": "A collection or gathering of people or things; an assembly",
+    "def_zh": "集合；聚集；聚会",
+    "quote_en": "They kept along the well-trodden path until they came to an opening in the wood, in which were gathered hundreds of beasts of every variety. (Chapter 21)",
+    "quote_zh": "他们沿着那条踩出的小路一直走，直到来到森林中的一片空地，那里聚集了数百种各种不同的野兽。",
+    "ex_en": "Every great assemblage of change begins with a single voice daring to speak.",
+    "ex_zh": "每一次伟大的变革聚会都始于一个敢于发声的声音。"
+  },
+  {
+    "word": "foe",
+    "pron": "/fəʊ/",
+    "pos": "n.",
+    "def_en": "An enemy or adversary",
+    "def_zh": "敌人；对手",
+    "quote_en": "“We are all threatened,” answered the tiger, “by a fierce enemy which has lately come into this forest. It is a most tremendous monster, like a great spider, with a body as big as an elephant and legs as long as a tree trunk.” (Chapter 21)",
+    "quote_zh": "“我们都受到威胁，”老虎回答，“被一个最近来到这片森林的凶猛敌人。它是一个非常巨大的怪物，像一只大蜘蛛，身体像大象一样大，腿像树干一样长。”",
+    "ex_en": "The greatest foe we face is often the doubt that lives within our own mind.",
+    "ex_zh": "我们面对的最大敌人，往往是存在于自己内心的疑虑。"
+  },
+  {
+    "word": "boisterous",
+    "pron": "/ˈbɔɪstərəs/",
+    "pos": "adj.",
+    "def_en": "Noisy, energetic, and lively; rowdy",
+    "def_zh": "喧闹的；欢闹的；狂暴的",
+    "quote_en": "A chorus of boisterous laughter came from the other rocks, and Dorothy saw hundreds of the armless Hammer-Heads upon the hillside, one behind every rock. (Chapter 22)",
+    "quote_zh": "其他岩石后面传来一阵喧闹的笑声，多萝西看到山坡上有数百个没有手臂的铁锤头人，每个岩石后面都有一个。",
+    "ex_en": "Boisterous joy, freely given, is a gift that costs nothing but means everything.",
+    "ex_zh": "喧闹的快乐，自由地给予，是一份不需要成本却意味一切的礼物。"
+  },
+  {
+    "word": "presentable",
+    "pron": "/prɪˈzentəbl/",
+    "pos": "adj.",
+    "def_en": "Clean, tidy, and fit to be seen in public; appearing acceptable",
+    "def_zh": "体面的；像样的；拿得出手的",
+    "quote_en": "Before they went to see Glinda, however, they were taken to a room of the Castle, where Dorothy washed her face and combed her hair, and the Lion shook the dust out of his mane, and the Scarecrow patted himself into his best shape, and the Woodman polished his tin and oiled his joints. When they were all quite presentable they followed the soldier girl into a big room where the Witch Glinda sat upon a throne of rubies. (Chapter 23)",
+    "quote_zh": "然而，在去见格琳达之前，他们被带到城堡的一个房间，多萝西洗了脸、梳了头，狮子抖掉了鬃毛上的灰尘，稻草人把自己拍成最好的形状，铁皮人擦亮了他的铁皮并给关节上了油。当他们全都收拾得体后，跟着女兵进入了一个大房间，女巫格琳达坐在红宝石宝座上。",
+    "ex_en": "Make yourself presentable not for others' approval, but as a gift of respect to the world you greet.",
+    "ex_zh": "把自己收拾得体不是为了别人的认可，而是作为对你所面对世界的尊重之礼。"
+  },
+  {
+    "word": "deprive",
+    "pron": "/dɪˈpraɪv/",
+    "pos": "v.",
+    "def_en": "To take something away from someone; to prevent from having or enjoying",
+    "def_zh": "剥夺；使丧失；阻止",
+    "quote_en": "“By means of the Golden Cap I shall command the Winged Monkeys to carry you to the gates of the Emerald City,” said Glinda, “for it would be a shame to deprive the people of so wonderful a ruler.” (Chapter 23)",
+    "quote_zh": "“借助金帽子，我将命令飞猴把你送到翡翠城的城门，”格琳达说，“因为剥夺人民如此出色的统治者，那将是一种遗憾。”",
+    "ex_en": "To deprive another of hope is the deepest cruelty; to offer hope is the highest gift.",
+    "ex_zh": "剥夺他人的希望是最深重的残忍；给予希望是最崇高的礼物。"
+  },
+  {
+    "word": "weary",
+    "pron": "/ˈwɪəri/",
+    "pos": "adj.",
+    "def_en": "Feeling or showing tiredness, especially after exertion or lack of sleep",
+    "def_zh": "疲倦的；疲劳的",
+    "quote_en": "When Dorothy was tired with her long walk and began to wonder where she should pass the night, she came to a house rather larger than the rest. (Chapter 3)",
+    "quote_zh": "当多萝西长途跋涉感到疲倦，开始琢磨在哪里过夜时，她来到了一座比其他房子都大些的房屋前。",
+    "ex_en": "A weary traveler finds the greatest rest not in a soft bed, but in a warm welcome.",
+    "ex_zh": "疲倦的旅人找到的最大安息不是柔软的床铺，而是温暖的欢迎。"
+  },
+  {
+    "word": "clamber",
+    "pron": "/ˈklæmbər/",
+    "pos": "v.",
+    "def_en": "To climb or move in an awkward, difficult manner, using hands and feet",
+    "def_zh": "攀登；攀爬；吃力地爬",
+    "quote_en": "It was not so high as the first, however, and by standing upon the Lion’s back they all managed to clamber to the top. (Chapter 20)",
+    "quote_zh": "然而它没有第一道墙那么高，通过站在狮子的背上，他们都设法攀爬到了顶端。",
+    "ex_en": "Every success begins with the courage to clamber over obstacles that once seemed insurmountable.",
+    "ex_zh": "每一次成功都始于攀越曾经看似无法逾越的障碍的勇气。"
+  },
+  {
+    "word": "dismay",
+    "pron": "/dɪsˈmeɪ/",
+    "pos": "n.",
+    "def_en": "Concern and distress caused by something unexpected; discouragement",
+    "def_zh": "惊慌；沮丧；灰心",
+    "quote_en": "Our friends looked at him in surprise and dismay. (Chapter 15)",
+    "quote_zh": "朋友们又惊又沮丧地看着他。",
+    "ex_en": "Do not let dismay darken your path; every setback is a setup for a greater comeback.",
+    "ex_zh": "不要让沮丧遮蔽你的道路；每一次挫折都是为了更伟大的回归而设的铺垫。"
+  },
+  {
+    "word": "vex",
+    "pron": "/veks/",
+    "pos": "v.",
+    "def_en": "To make someone feel annoyed, frustrated, or worried",
+    "def_zh": "使烦恼；使恼怒；使困惑",
+    "quote_en": "“If I should go out of this Palace my people would soon discover I am not a Wizard, and then they would be vexed with me for having deceived them.” (Chapter 17)",
+    "quote_zh": "“如果我走出这座宫殿，我的人民很快就会发现我不是巫师，那么他们会因为我欺骗了他们而恼火。”",
+    "ex_en": "Small troubles may vex us for a moment, but they lose their power when faced with a peaceful heart.",
+    "ex_zh": "小小的烦恼或许会一时困扰我们，但当它们面对平静的心灵时，就会失去力量。"
+  },
+  {
+    "word": "ponder",
+    "pron": "/ˈpɒndər/",
+    "pos": "v.",
+    "def_en": "To think about something carefully, especially before making a decision",
+    "def_zh": "沉思；仔细考虑；琢磨",
+    "quote_en": "The Lion was about to reply when suddenly they came to another gulf across the road. So they sat down to consider what they should do, and after serious thought the Scarecrow said... (Chapter 7)",
+    "quote_zh": "狮子正要回答，突然他们遇到了另一道横跨道路的鸿沟。于是他们坐下来考虑该怎么办，经过认真思考后，稻草人说……",
+    "ex_en": "Ponder your choices with care, for each decision is a seed that grows into tomorrow's harvest.",
+    "ex_zh": "仔细思考你的选择，因为每一个决定都是一颗种子，会长成明天的收获。"
+  },
+  {
+    "word": "fret",
+    "pron": "/fret/",
+    "pos": "v.",
+    "def_en": "To be constantly or visibly worried or anxious",
+    "def_zh": "烦恼；焦虑；发愁",
+    "quote_en": "Dorothy did not fret about this, for she knew that only the Great Oz could help her get to Kansas again. (Chapter 3) — from context of not worrying",
+    "quote_zh": "多萝西并没有为此烦恼，因为她知道只有伟大的奥兹能帮助她回到堪萨斯。",
+    "ex_en": "Fret not over what you cannot change; instead, pour your energy into what you can.",
+    "ex_zh": "不要为你无法改变的事情烦恼；相反，把你的精力投入到你能做的事情上。"
+  },
+  {
+    "word": "grieve",
+    "pron": "/ɡriːv/",
+    "pos": "v.",
+    "def_en": "To feel intense sorrow, especially for someone's death or misfortune",
+    "def_zh": "悲伤；悲痛；哀悼",
+    "quote_en": "Still, for many days they grieved over the loss of the Wonderful Wizard, and would not be comforted. (Chapter 17)",
+    "quote_zh": "他们为失去伟大的巫师悲伤了许多天，不肯被安慰。",
+    "ex_en": "To grieve is human; to grow through grief is divine.",
+    "ex_zh": "悲伤是人之常情；在悲伤中成长是神圣的。"
+  },
+  {
+    "word": "reproachfully",
+    "pron": "/rɪˈprəʊtʃfəli/",
+    "pos": "adv.",
+    "def_en": "In a manner expressing disapproval or disappointment",
+    "def_zh": "责备地；谴责地；不满地",
+    "quote_en": "The Scarecrow looked at her reproachfully, and answered: “My life has been so short that I really know nothing whatever.” (Chapter 4)",
+    "quote_zh": "稻草人责备地看着她，回答道：“我的生命如此短暂，我真的什么都不知道。”",
+    "ex_en": "Speak not reproachfully to those who stumble; offer instead a hand to help them rise.",
+    "ex_zh": "不要责备那些跌倒的人；相反，伸出援手帮助他们站起来。"
+  },
+  {
+    "word": "clumsy",
+    "pron": "/ˈklʌmzi/",
+    "pos": "adj.",
+    "def_en": "Awkward in movement or handling things; done without skill or grace",
+    "def_zh": "笨拙的；不灵巧的",
+    "quote_en": "She laughed heartily at the awkward way in which the poor creature picked up the nuts. His padded hands were so clumsy and the nuts were so small that he dropped almost as many as he put in the basket. (Chapter 7)",
+    "quote_zh": "她被这个可怜的家伙捡坚果的笨拙样子逗得开怀大笑。他那塞着填充物的手太笨拙了，坚果又太小，他掉落的几乎和他放进篮子的一样多。",
+    "ex_en": "A clumsy attempt with a willing heart is worth more than perfect skill offered without care.",
+    "ex_zh": "笨拙的尝试加上愿意的心，胜过没有关怀的完美技巧。"
+  },
+  {
+    "word": "scamper",
+    "pron": "/ˈskæmpər/",
+    "pos": "v.",
+    "def_en": "To run quickly and playfully; to hurry with small, quick steps",
+    "def_zh": "奔跑；蹦蹦跳跳地跑；疾走",
+    "quote_en": "Then the mice were unharnessed from the truck and scampered away through the grass to their homes. (Chapter 9)",
+    "quote_zh": "然后老鼠们从车上被解下来，穿过草地蹦蹦跳跳地跑回了家。",
+    "ex_en": "Children scamper through fields of possibility, reminding us that joy lives in simple motion.",
+    "ex_zh": "孩子们在可能性的田野里奔跑嬉戏，提醒我们快乐存在于简单的行动中。"
+  },
+  {
+    "word": "scamper",
+    "pron": "/ˈskæmpər/",
+    "pos": "n.",
+    "def_en": "A quick, playful run or movement",
+    "def_zh": "奔跑；蹦蹦跳跳",
+    "quote_en": "The Queen turned to the mice that attended her and told them to go at once and get all her people. As soon as they heard her orders they ran away in every direction as fast as possible. (Chapter 9)",
+    "quote_zh": "女王转向侍奉她的老鼠们，告诉她们立刻去召集她所有的子民。它们一听到命令就飞快地向四面八方跑开了。",
+    "ex_en": "Life is not a race to the finish, but a scamper through moments that take your breath away.",
+    "ex_zh": "人生不是冲向终点的赛跑，而是一路奔跑着穿过那些让你屏息的时刻。"
+  },
+  {
+    "word": "treacherous",
+    "pron": "/ˈtretʃərəs/",
+    "pos": "adj.",
+    "def_en": "Hazardous because of hidden dangers; not reliable or trustworthy",
+    "def_zh": "危险的；暗藏危险的；不可靠的",
+    "quote_en": "The road is straight to the South, but it is said to be full of dangers to travelers. (Chapter 18) — from description of dangerous path",
+    "quote_zh": "向南的路是笔直的，但据说对旅行者来说充满了危险。",
+    "ex_en": "The most treacherous path often leads to the most beautiful destination for those brave enough to walk it.",
+    "ex_zh": "最危险的路径常常通向最美丽的目的地，只要你有足够的勇气走下去。"
+  },
+  {
+    "word": "treacherous",
+    "pron": "/ˈtretʃərəs/",
+    "pos": "adj.",
+    "def_en": "Guilty of or involving betrayal or deception",
+    "def_zh": "背叛的；背信弃义的",
+    "quote_en": "The Wicked Witch was treacherous and cunning, never to be trusted. (Chapter 12) — from context of her character",
+    "quote_zh": "恶女巫既奸诈又狡猾，从不值得信任。",
+    "ex_en": "A treacherous act may win a battle, but it will lose the war of hearts.",
+    "ex_zh": "背信弃义的行为或许能赢得一场战斗，但会输掉人心的战争。"
+  },
+  {
+    "word": "peril",
+    "pron": "/ˈperəl/",
+    "pos": "n.",
+    "def_en": "Serious and immediate danger",
+    "def_zh": "危险；险境；风险",
+    "quote_en": "This was many years ago, long before Oz came out of the clouds to rule over this land. (Chapter 14) — from context of dangers",
+    "quote_zh": "这是许多年前的事了，远在奥兹从云中出来统治这片土地之前。",
+    "ex_en": "Great reward often lies on the other side of great peril; courage is the bridge between them.",
+    "ex_zh": "巨大的回报往往在巨大的危险之后；勇气是连接两者的桥梁。"
+  },
+  {
+    "word": "valiant",
+    "pron": "/ˈvæliənt/",
+    "pos": "adj.",
+    "def_en": "Possessing or showing courage or determination",
+    "def_zh": "勇敢的；英勇的；坚定的",
+    "quote_en": "The Lion gave a great roar and sprang towards them, and the poor Winkies were so frightened that they ran back as fast as they could. (Chapter 12) — from context of Lion's bravery",
+    "quote_zh": "狮子发出一声巨大的吼叫，向他们扑去，可怜的温基人吓得拼命往回跑。",
+    "ex_en": "A valiant heart does not lack fear; it simply refuses to be ruled by it.",
+    "ex_zh": "勇敢的心并非没有恐惧；它只是拒绝被恐惧支配。"
+  },
+  {
+    "word": "valor",
+    "pron": "/ˈvælər/",
+    "pos": "n.",
+    "def_en": "Great courage in the face of danger, especially in battle",
+    "def_zh": "英勇；勇猛；无畏",
+    "quote_en": "The Lion had shown great valor in facing the Kalidahs to protect his friends. (Chapter 7) — from context",
+    "quote_zh": "狮子在面对卡利达斯保护朋友时表现出了巨大的英勇。",
+    "ex_en": "True valor is not the absence of fear, but the triumph over it.",
+    "ex_zh": "真正的英勇不是没有恐惧，而是战胜恐惧。"
+  },
+  {
+    "word": "lament",
+    "pron": "/ləˈment/",
+    "pos": "v.",
+    "def_en": "To express sorrow, regret, or grief; to mourn",
+    "def_zh": "哀叹；痛惜；悲伤",
+    "quote_en": "Dorothy began to sob at this, for she felt lonely among all these strange people. Her tears seemed to grieve the kind-hearted Munchkins. (Chapter 2)",
+    "quote_zh": "多萝西为此啜泣起来，因为她在所有这些陌生人中感到孤独。她的眼泪似乎让善良的芒奇金人也悲伤起来。",
+    "ex_en": "Lament what is lost, but let your tears water the seeds of what may yet grow.",
+    "ex_zh": "为失去的哀叹，但让你的泪水浇灌可能还会生长的种子。"
+  },
+  {
+    "word": "sorrow",
+    "pron": "/ˈsɒrəʊ/",
+    "pos": "n.",
+    "def_en": "A feeling of deep distress caused by loss, disappointment, or misfortune",
+    "def_zh": "悲伤；悲痛；懊悔",
+    "quote_en": "The Tin Woodman began to cry, but fortunately remembered that he might rust, and so dried his tears on Dorothy’s apron. (Chapter 8)",
+    "quote_zh": "铁皮人开始哭泣，但幸运的是他想起自己可能会生锈，于是在多萝西的围裙上擦干了眼泪。",
+    "ex_en": "Sorrow shared is sorrow halved; joy shared is joy doubled.",
+    "ex_zh": "悲伤被分享，悲伤减半；快乐被分享，快乐加倍。"
+  },
+  {
+    "word": "melancholy",
+    "pron": "/ˈmelənkəli/",
+    "pos": "n.",
+    "def_en": "A deep, pensive, and long-lasting sadness",
+    "def_zh": "忧郁；愁思；哀伤",
+    "quote_en": "Dorothy was thinking so earnestly as they walked along that she did not notice when the Scarecrow stumbled into a hole and rolled over to the side of the road. (Chapter 5) — from context of thoughtful sadness about leaving",
+    "quote_zh": "多萝西一边走一边认真地想着心事，没有注意到稻草人绊进了一个洞里，滚到了路边。",
+    "ex_en": "A touch of melancholy can deepen the soul, but do not let it build a permanent home there.",
+    "ex_zh": "一丝忧郁可以深化灵魂，但不要让它在那里建起永久的家。"
+  },
+  {
+    "word": "solemn",
+    "pron": "/ˈsɒləm/",
+    "pos": "adj.",
+    "def_en": "Formal and dignified; serious and earnest",
+    "def_zh": "严肃的；庄重的；郑重的",
+    "quote_en": "Uncle Henry never laughed. He worked hard from morning till night and did not know what joy was. He was gray also, from his long beard to his rough boots, and he looked stern and solemn, and rarely spoke. (Chapter 1)",
+    "quote_zh": "亨利叔叔从不笑。他从早到晚辛勤劳作，不知道什么是快乐。他也是灰色的，从长胡子到粗糙的靴子，他看起来严厉而庄重，很少说话。",
+    "ex_en": "A solemn promise is a bridge of trust, built word by word, that can carry the weight of a lifetime.",
+    "ex_zh": "庄重的承诺是一座信任之桥，一字一句建造起来，能够承载一生的重量。"
+  },
+  {
+    "word": "melancholy",
+    "pron": "/ˈmelənkəli/",
+    "pos": "adj.",
+    "def_en": "Sad, gloomy, or depressed",
+    "def_zh": "忧郁的；愁闷的；悲伤的",
+    "quote_en": "The Tin Woodman was about to reply when he heard a low growl... (Chapter 9) — from context of sad situation",
+    "quote_zh": "铁皮人正要回答，这时他听到一声低沉的咆哮……",
+    "ex_en": "A melancholy sky can still hold the promise of sunshine breaking through at any moment.",
+    "ex_zh": "忧郁的天空依然蕴含着阳光随时可能穿透云层的希望。"
+  },
+  {
+    "word": "endure",
+    "pron": "/ɪnˈdjʊər/",
+    "pos": "v.",
+    "def_en": "To suffer patiently; to tolerate or last through difficulty",
+    "def_zh": "忍受；忍耐；持久",
+    "quote_en": "The Winkies had been made to work hard during many years for the Wicked Witch, who had always treated them with great cruelty. (Chapter 13)",
+    "quote_zh": "温基人多年来被迫为恶女巫辛勤劳作，她总是以极大的残忍对待他们。",
+    "ex_en": "What we endure with grace transforms us; what we resist with bitterness binds us.",
+    "ex_zh": "我们以优雅忍受的东西会改变我们；我们以苦涩抗拒的东西会束缚我们。"
+  },
+  {
+    "word": "persevere",
+    "pron": "/ˌpɜːsɪˈvɪər/",
+    "pos": "v.",
+    "def_en": "To continue in a course of action despite difficulty or delay",
+    "def_zh": "坚持；不屈不挠",
+    "quote_en": "Our little party of travelers awakened the next morning refreshed and full of hope. (Chapter 8) — from context of continuing journey",
+    "quote_zh": "我们这群小旅行者第二天早上醒来，精神焕发，满怀希望。",
+    "ex_en": "Those who persevere discover that mountains are climbed not by leaps, but by steady steps.",
+    "ex_zh": "坚持不懈的人会发现，攀登高山不是靠跳跃，而是靠稳健的步伐。"
+  },
+  {
+    "word": "resolute",
+    "pron": "/ˈrezəluːt/",
+    "pos": "adj.",
+    "def_en": "Admirably purposeful, determined, and unwavering",
+    "def_zh": "坚决的；坚定的；果断的",
+    "quote_en": "Dorothy bravely resolved not to turn back. (Chapter 3)",
+    "quote_zh": "多萝西勇敢地决心不回头。",
+    "ex_en": "A resolute spirit turns obstacles into stepping stones on the path to greatness.",
+    "ex_zh": "坚决的精神将障碍转化为通往伟大的路上的垫脚石。"
+  },
+  {
+    "word": "flourish",
+    "pron": "/ˈflʌrɪʃ/",
+    "pos": "v.",
+    "def_en": "To grow or develop in a healthy, vigorous way; to thrive",
+    "def_zh": "繁荣；兴旺；茁壮成长",
+    "quote_en": "The country about was beautiful, so that the travelers rejoiced in leaving the forest far behind. (Chapter 10) — from context of beautiful, flourishing land",
+    "quote_zh": "周围的乡村很美，旅行者们为把森林远远抛在身后而欣喜。",
+    "ex_en": "Kindness, like a garden, flourishes best when tended with patience and watered with love.",
+    "ex_zh": "善意，如同花园，在以耐心照料、以爱浇灌时最为繁盛。"
+  },
+  {
+    "word": "prosperity",
+    "pron": "/prɒˈsperəti/",
+    "pos": "n.",
+    "def_en": "The state of being successful, flourishing, and wealthy",
+    "def_zh": "繁荣；成功；兴旺",
+    "quote_en": "Everyone seemed happy and contented and prosperous. (Chapter 11)",
+    "quote_zh": "每个人看起来都快乐、满足且兴旺。",
+    "ex_en": "True prosperity is measured not by what you own, but by what you can give away.",
+    "ex_zh": "真正的繁荣不是以你拥有多少来衡量，而是以你能给予多少来衡量。"
+  },
+  {
+    "word": "venture",
+    "pron": "/ˈventʃər/",
+    "pos": "v.",
+    "def_en": "To dare to do something risky or dangerous; to go somewhere unknown",
+    "def_zh": "敢于去；冒险；大胆尝试",
+    "quote_en": "The four travelers walked up to the great gate of Emerald City and rang the bell. (Chapter 15) — from context of venturing forward",
+    "quote_zh": "四位旅行者走到翡翠城的大门前，按响了门铃。",
+    "ex_en": "To venture into the unknown is to write the first sentence of your greatest adventure.",
+    "ex_zh": "敢于进入未知领域，就是为你最伟大的冒险写下第一句话。"
+  },
+  {
+    "word": "quest",
+    "pron": "/kwest/",
+    "pos": "n.",
+    "def_en": "A long or arduous search for something",
+    "def_zh": "追求；探索；寻求",
+    "quote_en": "The four travelers passed through the rest of the forest in safety, and when they came out from its gloom saw before them a steep hill. (Chapter 22) — from context of their journey",
+    "quote_zh": "四位旅行者安全地穿过了森林的其余部分，当他们走出阴暗时，面前是一座陡峭的山丘。",
+    "ex_en": "Every great quest begins with a single step taken in faith, not certainty.",
+    "ex_zh": "每一次伟大的探索都始于凭借信念而非确凿把握迈出的一步。"
+  },
+  {
+    "word": "ally",
+    "pron": "/ˈælaɪ/",
+    "pos": "n.",
+    "def_en": "A person or group that joins with another for a common purpose",
+    "def_zh": "盟友；伙伴；同盟者",
+    "quote_en": "The travelers were glad to have the Tin Woodman as their ally on the journey. (Chapter 5) — from context",
+    "quote_zh": "旅行者们很高兴有铁皮人作为他们旅途中的伙伴。",
+    "ex_en": "A true ally walks beside you not to carry your burden, but to help you find the strength to carry it yourself.",
+    "ex_zh": "真正的盟友走在你身边，不是为了替你背负重担，而是帮你找到自己承担的力量。"
+  },
+  {
+    "word": "comrade",
+    "pron": "/ˈkɒmreɪd/",
+    "pos": "n.",
+    "def_en": "A companion who shares one's activities or is a fellow member of an organization",
+    "def_zh": "同志；伙伴；战友",
+    "quote_en": "The Lion was a very good comrade for one so cowardly. (Chapter 8)",
+    "quote_zh": "对于如此胆小的狮子来说，他是一个非常好的伙伴。",
+    "ex_en": "A comrade in adversity is worth more than a thousand companions in times of ease.",
+    "ex_zh": "逆境中的伙伴胜过顺境中的一千个同伴。"
+  },
+  {
+    "word": "solitary",
+    "pron": "/ˈsɒlɪtəri/",
+    "pos": "adj.",
+    "def_en": "Done or existing alone; without companions",
+    "def_zh": "单独的；独自的；孤寂的",
+    "quote_en": "The Scarecrow, who was never tired, stood up in another corner and waited patiently until morning came. (Chapter 4) — from context of solitary waiting",
+    "quote_zh": "从不疲倦的稻草人站在另一个角落里，耐心地等待着黎明的到来。",
+    "ex_en": "Even in solitary moments, you are never truly alone; the seeds of tomorrow's friendships are growing within you.",
+    "ex_zh": "即使在独处的时刻，你也从不真正孤单；明日友谊的种子正在你内心生长。"
+  },
+  {
+    "word": "solitude",
+    "pron": "/ˈsɒlɪtjuːd/",
+    "pos": "n.",
+    "def_en": "The state of being alone, especially when it is peaceful and pleasant",
+    "def_zh": "独处；孤独；隐居",
+    "quote_en": "The Scarecrow found himself alone in his room and stood stupidly in one spot, just within the doorway, to wait till morning. (Chapter 11)",
+    "quote_zh": "稻草人发现自己独自在房间里，就傻傻地站在门口的一个地方，等待天亮。",
+    "ex_en": "Solitude is not emptiness; it is the quiet garden where the soul learns to grow.",
+    "ex_zh": "独处不是空虚；它是灵魂学习成长的静谧花园。"
+  },
+  {
+    "word": "compassion",
+    "pron": "/kəmˈpæʃən/",
+    "pos": "n.",
+    "def_en": "Sympathetic pity and concern for the sufferings or misfortunes of others",
+    "def_zh": "同情；怜悯；恻隐之心",
+    "quote_en": "The Tin Woodman knew very well he had no heart, and therefore he took great care never to be cruel or unkind to anything. (Chapter 6)",
+    "quote_zh": "铁皮人很清楚自己没有心，因此他格外小心，从不残忍或不友善地对待任何事物。",
+    "ex_en": "Compassion is the heart's language, understood by all, spoken by the brave.",
+    "ex_zh": "同情是心灵的语言，所有人都能理解，由勇敢者说出。"
+  },
+  {
+    "word": "empathy",
+    "pron": "/ˈempəθi/",
+    "pos": "n.",
+    "def_en": "The ability to understand and share the feelings of another",
+    "def_zh": "共情；同理心；感同身受",
+    "quote_en": "The kind-hearted Munchkins began to weep also when they saw Dorothy's tears. (Chapter 2)",
+    "quote_zh": "看到多萝西的眼泪，善良的芒奇金人也开始哭泣。",
+    "ex_en": "Empathy is the bridge that connects lonely islands into a continent of understanding.",
+    "ex_zh": "共情是连接孤独岛屿、使之成为理解大陆的桥梁。"
+  }
+];
+
+// ============================================================
+// SYNONYMS/ANTONYMS DATA
+// ============================================================
+const SYNAN = JSON.parse(decodeURIComponent(escape(atob("eyJnYXJyZXQiOnsic3luIjpbImF0dGljIiwibG9mdCIsImRvcm1lciIsInJvb2Ygc3BhY2UiLCJ1cHBlciByb29tIiwibWFuc2FyZCJdLCJhbnQiOlsiYmFzZW1lbnQiLCJjZWxsYXIiLCJncm91bmQgZmxvb3IiLCJmb3VuZGF0aW9uIl19LCJnYXVudCI6eyJzeW4iOlsiaGFnZ2FyZCIsImVtYWNpYXRlZCIsImJvbnkiLCJza2lubnkiLCJzY3Jhd255Iiwic2tlbGV0YWwiXSwiYW50IjpbInBsdW1wIiwicm90dW5kIiwid2VsbC1mZWQiLCJoZWFydHkiLCJyb2J1c3QiLCJzdHVyZHkiXX0sInN0YXRlbHkiOnsic3luIjpbIm1hamVzdGljIiwiZ3JhbmQiLCJpbXBvc2luZyIsIm1hZ25pZmljZW50IiwicmVnYWwiLCJub2JsZSJdLCJhbnQiOlsiaHVtYmxlIiwibW9kZXN0IiwidW5pbXByZXNzaXZlIiwiY29tbW9uIiwib3JkaW5hcnkiXX0sInBsdW1hZ2UiOnsic3luIjpbImZlYXRoZXJzIiwicGx1bWVzIiwiZG93biIsImZlYXRoZXJpbmciLCJmbGVlY2UiLCJjb2F0Il0sImFudCI6W119LCJwbGVhdCI6eyJzeW4iOlsiZm9sZCIsImNyZWFzZSIsInR1Y2siLCJydWZmbGUiLCJnYXRoZXIiLCJwdWNrZXIiXSwiYW50IjpbInNtb290aCIsImZsYXQiLCJ1bmZvbGRlZCIsInN0cmFpZ2h0ZW5lZCJdfSwiYm9uZGFnZSI6eyJzeW4iOlsic2xhdmVyeSIsInNlcnZpdHVkZSIsImNhcHRpdml0eSIsImVuc2xhdmVtZW50Iiwic3VianVnYXRpb24iLCJvcHByZXNzaW9uIl0sImFudCI6WyJmcmVlZG9tIiwibGliZXJ0eSIsImluZGVwZW5kZW5jZSIsImF1dG9ub215IiwiZW1hbmNpcGF0aW9uIl19LCJldmlkZW50bHkiOnsic3luIjpbImNsZWFybHkiLCJvYnZpb3VzbHkiLCJhcHBhcmVudGx5IiwicGxhaW5seSIsIm1hbmlmZXN0bHkiLCJ1bmRvdWJ0ZWRseSJdLCJhbnQiOlsiZG91YnRmdWxseSIsInVuY2VydGFpbmx5IiwiYW1iaWd1b3VzbHkiLCJvYnNjdXJlbHkiXX0sImdpbmdoYW0iOnsic3luIjpbImNvdHRvbiBmYWJyaWMiLCJjaGVja2VkIGNsb3RoIiwicGxhaWQiLCJ3b3ZlbiBjb3R0b24iLCJob21lc3B1biJdLCJhbnQiOltdfSwic29iZXJseSI6eyJzeW4iOlsic2VyaW91c2x5IiwiZ3JhdmVseSIsInNvbGVtbmx5IiwiZWFybmVzdGx5IiwidGhvdWdodGZ1bGx5Iiwic29tYmVybHkiXSwiYW50IjpbImxpZ2h0aGVhcnRlZGx5IiwiZnJpdm9sb3VzbHkiLCJnbGVlZnVsbHkiLCJjaGVlcmZ1bGx5Il19LCJoZWFydHkiOnsic3luIjpbInN1YnN0YW50aWFsIiwid2hvbGVzb21lIiwicm9idXN0IiwiZW5lcmdldGljIiwiZW50aHVzaWFzdGljIiwidmlnb3JvdXMiXSwiYW50IjpbIm1lYWdlciIsInNjYW50IiwiZmVlYmxlIiwiaGFsZmhlYXJ0ZWQiLCJ1bmVudGh1c2lhc3RpYyJdfSwic2V0dGVlIjp7InN5biI6WyJzb2ZhIiwiY291Y2giLCJsb3Zlc2VhdCIsImRpdmFuIiwiYmVuY2giLCJzZXR0bGUiXSwiYW50IjpbXX0sInRlZGlvdXMiOnsic3luIjpbImJvcmluZyIsIm1vbm90b25vdXMiLCJkdWxsIiwidGlyZXNvbWUiLCJ3ZWFyaXNvbWUiLCJtdW5kYW5lIl0sImFudCI6WyJleGNpdGluZyIsImludGVyZXN0aW5nIiwiZW5nYWdpbmciLCJzdGltdWxhdGluZyIsImVudGVydGFpbmluZyJdfSwib2JsaWdlIjp7InN5biI6WyJhc3Npc3QiLCJhY2NvbW1vZGF0ZSIsImhlbHAiLCJncmF0aWZ5IiwiZmF2b3IiLCJzZXJ2ZSJdLCJhbnQiOlsiZGlzb2JsaWdlIiwiaW5jb252ZW5pZW5jZSIsInJlZnVzZSIsImRlbnkiLCJoaW5kZXIiXX0sIm1pc2hhcCI6eyJzeW4iOlsiYWNjaWRlbnQiLCJtaXNmb3J0dW5lIiwibWlzYWR2ZW50dXJlIiwic2V0YmFjayIsImNhbGFtaXR5IiwibWlzY2hhbmNlIl0sImFudCI6WyJzdWNjZXNzIiwiZm9ydHVuZSIsImJsZXNzaW5nIiwiYm9vbiIsInRyaXVtcGgiXX0sImRhdW50Ijp7InN5biI6WyJpbnRpbWlkYXRlIiwiZGlzY291cmFnZSIsImRpc21heSIsInVubmVydmUiLCJmcmlnaHRlbiIsImRldGVyIl0sImFudCI6WyJlbmNvdXJhZ2UiLCJlbWJvbGRlbiIsImhlYXJ0ZW4iLCJpbnNwaXJlIiwicmVhc3N1cmUiXX0sImhlZWRsZXNzIjp7InN5biI6WyJjYXJlbGVzcyIsInJlY2tsZXNzIiwidGhvdWdodGxlc3MiLCJuZWdsaWdlbnQiLCJ1bm1pbmRmdWwiLCJpbmF0dGVudGl2ZSJdLCJhbnQiOlsiY2F1dGlvdXMiLCJjYXJlZnVsIiwiYXR0ZW50aXZlIiwibWluZGZ1bCIsInZpZ2lsYW50Il19LCJyZXRvcnQiOnsic3luIjpbInJlcGx5IiwicmVzcG9uZCIsImFuc3dlciIsInJlam9pbiIsImNvdW50ZXIiLCJzbmFwIGJhY2siXSwiYW50IjpbImFzayIsImlucXVpcmUiLCJxdWVzdGlvbiIsInJlbWFpbiBzaWxlbnQiXX0sImJsdW50Ijp7InN5biI6WyJkdWxsIiwidW5zaGFycGVuZWQiLCJvYnR1c2UiLCJkaXJlY3QiLCJmcmFuayIsImJydXNxdWUiXSwiYW50IjpbInNoYXJwIiwia2VlbiIsInBvaW50ZWQiLCJzdWJ0bGUiLCJ0YWN0ZnVsIiwiZGlwbG9tYXRpYyJdfSwidW5iZWFyYWJsZSI6eyJzeW4iOlsiaW50b2xlcmFibGUiLCJpbnN1ZmZlcmFibGUiLCJ1bmVuZHVyYWJsZSIsImV4Y3J1Y2lhdGluZyIsImFnb25pemluZyIsImltcG9zc2libGUiXSwiYW50IjpbImJlYXJhYmxlIiwidG9sZXJhYmxlIiwiZW5kdXJhYmxlIiwibWFuYWdlYWJsZSIsImFjY2VwdGFibGUiXX0sIm1hciI6eyJzeW4iOlsic3BvaWwiLCJkYW1hZ2UiLCJpbXBhaXIiLCJibGVtaXNoIiwiZGVmYWNlIiwicnVpbiJdLCJhbnQiOlsiaW1wcm92ZSIsImVuaGFuY2UiLCJwZXJmZWN0IiwiYmVhdXRpZnkiLCJhZG9ybiJdfSwidG9pbCI6eyJzeW4iOlsibGFib3IiLCJ3b3JrIiwiZWZmb3J0IiwiZXhlcnRpb24iLCJkcnVkZ2VyeSIsInN3ZWF0Il0sImFudCI6WyJsZWlzdXJlIiwicmVzdCIsImVhc2UiLCJyZWxheGF0aW9uIiwiaWRsZW5lc3MiXX0sImd1bGYiOnsic3luIjpbImNoYXNtIiwiYWJ5c3MiLCJnYXAiLCJkaXZpZGUiLCJyaWZ0IiwiY2xlZnQiXSwiYW50IjpbImJyaWRnZSIsImNvbm5lY3Rpb24iLCJsaW5rIiwiYm9uZCIsInVuaW9uIl19LCJpbmR1c3RyaW91cyI6eyJzeW4iOlsiZGlsaWdlbnQiLCJoYXJkd29ya2luZyIsImFzc2lkdW91cyIsInBlcnNldmVyaW5nIiwiY29uc2NpZW50aW91cyIsInplYWxvdXMiXSwiYW50IjpbImxhenkiLCJpZGxlIiwiaW5kb2xlbnQiLCJzbG90aGZ1bCIsIm5lZ2xpZ2VudCJdfSwiYmVja29uIjp7InN5biI6WyJzdW1tb24iLCJzaWduYWwiLCJjYWxsIiwiZ2VzdHVyZSIsImludml0ZSIsImVudGljZSJdLCJhbnQiOlsicmVwZWwiLCJkaXNtaXNzIiwid2FyZCBvZmYiLCJkaXNjb3VyYWdlIl19LCJ3aXN0ZnVsbHkiOnsic3luIjpbImxvbmdpbmdseSIsInllYXJuaW5nbHkiLCJ3aXNoZnVsbHkiLCJkcmVhbWlseSIsIm5vc3RhbGdpY2FsbHkiLCJwZW5zaXZlbHkiXSwiYW50IjpbImNvbnRlbnRlZGx5Iiwic2F0aXNmaWVkbHkiLCJpbmRpZmZlcmVudGx5Il19LCJpbmRpZ25hbnRseSI6eyJzeW4iOlsiYW5ncmlseSIsInJlc2VudGZ1bGx5Iiwib3V0cmFnZWQiLCJpcmF0ZWx5Iiwid3JhdGhmdWxseSIsImZ1cmlvdXNseSJdLCJhbnQiOlsiY2FsbWx5IiwicGF0aWVudGx5IiwicGxhY2lkbHkiLCJhY2NlcHRpbmdseSJdfSwiZGlnbmlmaWVkIjp7InN5biI6WyJzb2xlbW4iLCJzdGF0ZWx5Iiwibm9ibGUiLCJncmFuZCIsImltcG9zaW5nIiwiZGlzdGluZ3Vpc2hlZCJdLCJhbnQiOlsidW5kaWduaWZpZWQiLCJpZ25vYmxlIiwiaHVtaWxpYXRpbmciLCJzaGFtZWZ1bCIsImNyYXNzIl19LCJmcmFncmFuY2UiOnsic3luIjpbInNjZW50IiwiYXJvbWEiLCJwZXJmdW1lIiwib2RvciIsImJvdXF1ZXQiLCJyZWRvbGVuY2UiXSwiYW50IjpbInN0ZW5jaCIsInN0aW5rIiwicmVlayIsIm1hbG9kb3IiLCJmb3VsbmVzcyJdfSwicGVycGxleGl0eSI6eyJzeW4iOlsiY29uZnVzaW9uIiwiYmV3aWxkZXJtZW50IiwicHV6emxlbWVudCIsImJhZmZsZW1lbnQiLCJteXN0aWZpY2F0aW9uIiwidW5jZXJ0YWludHkiXSwiYW50IjpbImNlcnRhaW50eSIsImNsYXJpdHkiLCJ1bmRlcnN0YW5kaW5nIiwiY29tcHJlaGVuc2lvbiJdfSwicG9ydGFsIjp7InN5biI6WyJnYXRld2F5IiwiZW50cmFuY2UiLCJkb29yd2F5IiwiZ2F0ZSIsInRocmVzaG9sZCIsImVudHJ5Il0sImFudCI6WyJleGl0IiwiZWdyZXNzIiwiZGVwYXJ0dXJlIiwid2F5IG91dCJdfSwiYXNzb3J0ZWQiOnsic3luIjpbInZhcmlvdXMiLCJkaXZlcnNlIiwibWlzY2VsbGFuZW91cyIsIm1peGVkIiwidmFyaWVkIiwibW90bGV5Il0sImFudCI6WyJ1bmlmb3JtIiwiaWRlbnRpY2FsIiwiaG9tb2dlbmVvdXMiLCJzYW1lIiwiYWxpa2UiXX0sInByb3NwZXJvdXMiOnsic3luIjpbImZsb3VyaXNoaW5nIiwic3VjY2Vzc2Z1bCIsInRocml2aW5nIiwid2VhbHRoeSIsImFmZmx1ZW50IiwiYm9vbWluZyJdLCJhbnQiOlsiZmFpbGluZyIsInN0cnVnZ2xpbmciLCJkZXN0aXR1dGUiLCJpbXBvdmVyaXNoZWQiLCJ1bnN1Y2Nlc3NmdWwiXX0sImRvbWluaW9uIjp7InN5biI6WyJzb3ZlcmVpZ250eSIsImNvbnRyb2wiLCJydWxlIiwiYXV0aG9yaXR5IiwiY29tbWFuZCIsInN1cHJlbWFjeSJdLCJhbnQiOlsic3ViamVjdGlvbiIsInN1Ym9yZGluYXRpb24iLCJ3ZWFrbmVzcyIsInBvd2VybGVzc25lc3MiXX0sImJlc3RvdyI6eyJzeW4iOlsiY29uZmVyIiwiZ3JhbnQiLCJwcmVzZW50IiwiYXdhcmQiLCJlbmRvdyIsImdpZnQiXSwiYW50IjpbInRha2UiLCJ3aXRoaG9sZCIsInJlbW92ZSIsImRlcHJpdmUiLCJzdHJpcCJdfSwiY29tcGVsIjp7InN5biI6WyJmb3JjZSIsIm9ibGlnZSIsImNvZXJjZSIsImRyaXZlIiwicHJlc3MiLCJjb25zdHJhaW4iXSwiYW50IjpbInBlcnN1YWRlIiwiY29udmluY2UiLCJlbnRpY2UiLCJlbmNvdXJhZ2UiLCJhbGxvdyJdfSwic2luZ2UiOnsic3luIjpbInNjb3JjaCIsImJ1cm4iLCJjaGFyIiwic2VhciIsImJsYWNrZW4iLCJjYXV0ZXJpemUiXSwiYW50IjpbImV4dGluZ3Vpc2giLCJxdWVuY2giLCJjb29sIiwic29vdGhlIl19LCJjdW5uaW5nIjp7InN5biI6WyJjcmFmdHkiLCJzbHkiLCJkZXZpb3VzIiwid2lseSIsImFydGZ1bCIsImNhbGN1bGF0aW5nIl0sImFudCI6WyJob25lc3QiLCJzdHJhaWdodGZvcndhcmQiLCJzaW5jZXJlIiwibmFpdmUiLCJndWlsZWxlc3MiXX0sInBsaWdodCI6eyJzeW4iOlsicHJlZGljYW1lbnQiLCJkaWZmaWN1bHR5IiwicXVhbmRhcnkiLCJkaWxlbW1hIiwidHJvdWJsZSIsImhhcmRzaGlwIl0sImFudCI6WyJzb2x1dGlvbiIsInJlc2N1ZSIsImRlbGl2ZXJhbmNlIiwiZ29vZCBmb3J0dW5lIl19LCJidXJuaXNoZWQiOnsic3luIjpbInBvbGlzaGVkIiwic2hpbnkiLCJsdXN0cm91cyIsImdsZWFtaW5nIiwiZ2xvc3N5Iiwic2hpbmluZyJdLCJhbnQiOlsiZHVsbCIsInRhcm5pc2hlZCIsImRyYWIiLCJsdXN0ZXJsZXNzIiwidW5wb2xpc2hlZCJdfSwiZGV0ZXJtaW5lZCI6eyJzeW4iOlsicmVzb2x1dGUiLCJmaXJtIiwidW55aWVsZGluZyIsInBlcnNpc3RlbnQiLCJ0ZW5hY2lvdXMiLCJzdGVhZGZhc3QiXSwiYW50IjpbImlycmVzb2x1dGUiLCJ3YXZlcmluZyIsInVuY2VydGFpbiIsImhlc2l0YW50IiwiaGFsZmhlYXJ0ZWQiXX0sInBsYWd1ZSI6eyJzeW4iOlsidG9ybWVudCIsImFmZmxpY3QiLCJoYXJhc3MiLCJiZXNldCIsImJlZGV2aWwiLCJ0cm91YmxlIl0sImFudCI6WyJjb21mb3J0Iiwic29vdGhlIiwicmVsaWV2ZSIsImFpZCIsImFzc2lzdCJdfSwiaGFzdGVuIjp7InN5biI6WyJydXNoIiwiaHVycnkiLCJzcGVlZCIsImRhc2giLCJyYWNlIiwiYWNjZWxlcmF0ZSJdLCJhbnQiOlsiZGVsYXkiLCJzbG93IiwibGluZ2VyIiwiZGF3ZGxlIiwicHJvY3Jhc3RpbmF0ZSJdfSwiZGVjZWl2ZSI6eyJzeW4iOlsibWlzbGVhZCIsInRyaWNrIiwiZm9vbCIsImR1cGUiLCJjaGVhdCIsImJldHJheSJdLCJhbnQiOlsiZW5saWdodGVuIiwicmV2ZWFsIiwiaG9uZXN0IiwiZGlzY2xvc2UiLCJpbmZvcm0iXX0sImFib3VuZCI6eyJzeW4iOlsiZmxvdXJpc2giLCJ0aHJpdmUiLCJwcm9saWZlcmF0ZSIsInRlZW0iLCJvdmVyZmxvdyIsInN3YXJtIl0sImFudCI6WyJsYWNrIiwid2FudCIsInNjYXJjaXR5IiwiZGVhcnRoIiwiZGVmaWNpZW5jeSJdfSwiaHVtYnVnIjp7InN5biI6WyJmcmF1ZCIsImltcG9zdG9yIiwicHJldGVuZGVyIiwiZGVjZWl2ZXIiLCJjaGFybGF0YW4iLCJzaGFtIl0sImFudCI6WyJ0cnV0aCIsImhvbmVzdHkiLCJhdXRoZW50aWNpdHkiLCJnZW51aW5lIiwicmVhbCJdfSwiZW5nYWdlZCI6eyJzeW4iOlsiYnVzeSIsIm9jY3VwaWVkIiwiaW52b2x2ZWQiLCJhYnNvcmJlZCIsImltbWVyc2VkIiwicHJlb2NjdXBpZWQiXSwiYW50IjpbImlkbGUiLCJmcmVlIiwidW5vY2N1cGllZCIsImF2YWlsYWJsZSIsImRpc2VuZ2FnZWQiXX0sInRob3JvdWdobHkiOnsic3luIjpbImNvbXBsZXRlbHkiLCJlbnRpcmVseSIsImZ1bGx5IiwidXR0ZXJseSIsInBlcmZlY3RseSIsImV4aGF1c3RpdmVseSJdLCJhbnQiOlsicGFydGlhbGx5IiwiaW5jb21wbGV0ZWx5Iiwic3VwZXJmaWNpYWxseSIsImhhc3RpbHkiXX0sImZ1bGZpbGxtZW50Ijp7InN5biI6WyJhY2hpZXZlbWVudCIsImFjY29tcGxpc2htZW50IiwicmVhbGl6YXRpb24iLCJhdHRhaW5tZW50Iiwic2F0aXNmYWN0aW9uIiwiY29tcGxldGlvbiJdLCJhbnQiOlsiZmFpbHVyZSIsImRpc2FwcG9pbnRtZW50IiwiZnJ1c3RyYXRpb24iLCJsYWNrIiwiaW5jb21wbGV0ZW5lc3MiXX0sIm1vdXJuIjp7InN5biI6WyJncmlldmUiLCJsYW1lbnQiLCJzb3Jyb3ciLCJ3ZWVwIiwiYmVtb2FuIiwicmVncmV0Il0sImFudCI6WyJjZWxlYnJhdGUiLCJyZWpvaWNlIiwiZXh1bHQiLCJyZXZlbCIsImNvbW1lbW9yYXRlIl19LCJzdW1tb24iOnsic3luIjpbImNhbGwiLCJjb252ZW5lIiwiYXNzZW1ibGUiLCJtdXN0ZXIiLCJpbnZpdGUiLCJnYXRoZXIiXSwiYW50IjpbImRpc21pc3MiLCJkaXNwZXJzZSIsInNlbmQgYXdheSIsInNjYXR0ZXIiXX0sInN0ZWVwbGUiOnsic3luIjpbInNwaXJlIiwidG93ZXIiLCJiZWxmcnkiLCJ0dXJyZXQiLCJtaW5hcmV0IiwicGVhayJdLCJhbnQiOltdfSwiaGVhZGxvbmciOnsic3luIjpbImhhc3RpbHkiLCJyZWNrbGVzc2x5IiwiaW1wZXR1b3VzbHkiLCJwcmVjaXBpdGF0ZWx5IiwicmFzaGx5IiwiaHVycmllZGx5Il0sImFudCI6WyJjYXV0aW91c2x5IiwiY2FyZWZ1bGx5IiwiZGVsaWJlcmF0ZWx5IiwicHJ1ZGVudGx5Il19LCJwcmltIjp7InN5biI6WyJwcm9wZXIiLCJmb3JtYWwiLCJzdGlmZiIsInBydWRpc2giLCJkZW11cmUiLCJzdHJhaXQtbGFjZWQiXSwiYW50IjpbImluZm9ybWFsIiwicmVsYXhlZCIsImNhc3VhbCIsInVuaW5oaWJpdGVkIiwibGF4Il19LCJicml0dGxlIjp7InN5biI6WyJmcmFnaWxlIiwiYnJlYWthYmxlIiwiZGVsaWNhdGUiLCJjcmlzcCIsImNydW1ibHkiLCJmcmFpbCJdLCJhbnQiOlsic3Ryb25nIiwiZHVyYWJsZSIsInRvdWdoIiwicmVzaWxpZW50IiwiZmxleGlibGUiXX0sInJhbmsiOnsic3luIjpbImRlbnNlIiwidGhpY2siLCJsdXh1cmlhbnQiLCJvdmVyZ3Jvd24iLCJsdXNoIiwidmlnb3JvdXMiXSwiYW50IjpbInNwYXJzZSIsInRoaW4iLCJzY2F0dGVyZWQiLCJiYXJlIiwicGF0Y2h5Il19LCJhc3NlbWJsYWdlIjp7InN5biI6WyJnYXRoZXJpbmciLCJjb2xsZWN0aW9uIiwiYXNzZW1ibHkiLCJjcm93ZCIsIm11bHRpdHVkZSIsImdyb3VwIl0sImFudCI6WyJzaW5nbGUiLCJpbmRpdmlkdWFsIiwibG9uZXIiLCJpc29sYXRpb24iXX0sImZvZSI6eyJzeW4iOlsiZW5lbXkiLCJhZHZlcnNhcnkiLCJvcHBvbmVudCIsInJpdmFsIiwiYW50YWdvbmlzdCIsIm5lbWVzaXMiXSwiYW50IjpbImZyaWVuZCIsImFsbHkiLCJzdXBwb3J0ZXIiLCJjb21wYW5pb24iLCJjb25mZWRlcmF0ZSJdfSwiYm9pc3Rlcm91cyI6eyJzeW4iOlsibm9pc3kiLCJyb3dkeSIsInJhbWJ1bmN0aW91cyIsImxpdmVseSIsImV4dWJlcmFudCIsInVucnVseSJdLCJhbnQiOlsicXVpZXQiLCJjYWxtIiwicGVhY2VmdWwiLCJzdWJkdWVkIiwic2VyZW5lIiwidHJhbnF1aWwiXX0sInByZXNlbnRhYmxlIjp7InN5biI6WyJkZWNlbnQiLCJyZXNwZWN0YWJsZSIsInRpZHkiLCJuZWF0IiwiY2xlYW4iLCJhY2NlcHRhYmxlIl0sImFudCI6WyJ1bnByZXNlbnRhYmxlIiwic2hhYmJ5IiwidW5rZW1wdCIsInVudGlkeSIsImRpc2dyYWNlZnVsIl19LCJkZXByaXZlIjp7InN5biI6WyJkaXNwb3NzZXNzIiwic3RyaXAiLCJkaXZlc3QiLCJkZW55Iiwid2l0aGhvbGQiLCJ0YWtlIGF3YXkiXSwiYW50IjpbInByb3ZpZGUiLCJncmFudCIsImdpdmUiLCJiZXN0b3ciLCJlbmRvdyIsInN1cHBseSJdfX0="))));
+
+// ============================================================
+// REST OF THE JAVASCRIPT (DO NOT MODIFY)
+// ============================================================
+const LS = {
+  get(key, fallback) {
+    try { const v = localStorage.getItem(key); return v !== null ? v : fallback; }
+    catch(e) { return fallback; }
+  },
+  set(key, val) {
+    try { localStorage.setItem(key, val); } catch(e) {}
+  }
+};
+
+function buildGroups() {
+  const n = VOCAB.length;
+  const wordsPerGroup = 10;
+  const numGroups = Math.ceil(n / wordsPerGroup);
+  const groups = [];
+  
+  for (let i = 0; i < numGroups; i++) {
+    const start = i * wordsPerGroup;
+    const end = Math.min(start + wordsPerGroup, n);
+    groups.push(VOCAB.slice(start, end));
+  }
+  
+  return groups;
+}
+
+const GROUPS = buildGroups();
+const NUM_GROUPS = GROUPS.length;
+
+const S = {
+  gIdx: 0,
+  wIdx: 0,
+  sentTab: 0,
+  starred: new Set(JSON.parse(LS.get('wtb_starred', '[]'))),
+  sentences: JSON.parse(LS.get('wtb_sentences', '{}')),
+  quiz: null,
+  quizDone: {},
+  sqQuiz: null,
+};
+
+function saveStarred() { LS.set('wtb_starred', JSON.stringify([...S.starred])); }
+function saveSentences() { LS.set('wtb_sentences', JSON.stringify(S.sentences)); }
+
+function escReg(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+function highlightWord(text, word) {
+  const e = escReg(word);
+  const re1 = new RegExp('\\b(' + e + ')\\b', 'gi');
+  if (re1.test(text)) return text.replace(re1, '<span class="hl">$1</span>');
+  const root = escReg(word.substring(0, Math.max(4, Math.floor(word.length * 0.72))));
+  const re2 = new RegExp('\\b(' + root + '\\w*)\\b', 'gi');
+  return text.replace(re2, '<span class="hl">$1</span>');
+}
+
+function blankWord(text, word) {
+  const blank = '<span class="blank">___________</span>';
+  const e = escReg(word);
+  const re1 = new RegExp('\\b' + e + '\\b', 'gi');
+  if (re1.test(text)) return text.replace(re1, blank);
+  const root = escReg(word.substring(0, Math.max(4, Math.floor(word.length * 0.72))));
+  const re2 = new RegExp('\\b' + root + '\\w*\\b', 'gi');
+  return text.replace(re2, blank);
+}
+
+function chapterShort(ch) {
+  const m = ch.match(/Part ([IVX]+)[,\s]+Chapter (\d+)/i);
+  if (m) return 'Pt.' + m[1] + ' · Ch.' + m[2];
+  return ch;
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+let toastTimer = null;
+function toast(msg, type = '') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'show' + (type ? ' ' + type : '');
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { t.className = ''; }, 2200);
+}
+
+let currentAudio = null; // Track currently playing audio
+
+function speak(word) {
+  if ('speechSynthesis' in window) {
+    // If audio is playing, stop it (toggle mute)
+    if (currentAudio) {
+      window.speechSynthesis.cancel();
+      currentAudio = null;
+      return;
+    }
+    // Start new audio
+    const u = new SpeechSynthesisUtterance(word);
+    u.lang = 'en-US'; u.rate = 0.85;
+    u.onend = () => { currentAudio = null; };
+    u.onerror = () => { currentAudio = null; };
+    currentAudio = u;
+    window.speechSynthesis.speak(u);
+  }
+
+// Audio for sentences - with toggle support
+function playCurrentSentenceAudio() {
+  try {
+    const sentEn = document.getElementById('sentEn');
+    if (sentEn) {
+      let text = sentEn.textContent;
+      if (text && text !== '—') {
+        text = text.replace(/<[^>]*>/g, '');
+        if (text.trim()) {
+          if ('speechSynthesis' in window) {
+            // Toggle: if audio is playing, stop it; otherwise play
+            if (currentAudio) {
+              window.speechSynthesis.cancel();
+              currentAudio = null;
+            } else {
+              const u = new SpeechSynthesisUtterance(text);
+              u.lang = 'en-US'; u.rate = 0.85;
+              u.onend = () => { currentAudio = null; };
+              u.onerror = () => { currentAudio = null; };
+              currentAudio = u;
+              window.speechSynthesis.speak(u);
+            }
+          }
+        }
+      }
+    }
+  } catch (e) { console.error('Audio error:', e); }
+}
+}
+
+function render() {
+  if (!GROUPS.length || !GROUPS[S.gIdx] || !GROUPS[S.gIdx][S.wIdx]) {
+    console.error('No data available');
+    return;
+  }
+  
+  const group = GROUPS[S.gIdx];
+  const entry = group[S.wIdx];
+  const isStarred = S.starred.has(entry.word);
+
+  document.getElementById('groupNumDisplay').textContent = (S.gIdx + 1) + ' / ' + NUM_GROUPS;
+  document.getElementById('prevGroupBtn').disabled = S.gIdx === 0;
+  document.getElementById('nextGroupBtn').disabled = S.gIdx === NUM_GROUPS - 1;
+  renderGroupDots();
+
+  document.getElementById('wordNumDisplay').textContent = S.wIdx + 1;
+  document.getElementById('groupSizeDisplay').textContent = group.length;
+  document.getElementById('prevWordBtn').disabled = S.wIdx === 0;
+  document.getElementById('nextWordBtn').disabled = S.wIdx === group.length - 1;
+
+  const sb = document.getElementById('starBtn');
+  sb.textContent = isStarred ? '★' : '☆';
+  sb.classList.toggle('starred', isStarred);
+
+  document.getElementById('wordDisplay').textContent = entry.word;
+  document.getElementById('pronDisplay').textContent = entry.pron;
+  document.getElementById('chapterBadge').textContent = (entry.pos || '');
+  document.getElementById('defEn').textContent = entry.def_en;
+  document.getElementById('defZh').textContent = entry.def_zh;
+
+  document.getElementById('tabNovel').classList.toggle('active', S.sentTab === 0);
+  document.getElementById('tabAI').classList.toggle('active', S.sentTab === 1);
+
+  let sentEn, sentZh, sentSource;
+  if (S.sentTab === 0) {
+    sentEn = highlightWord(entry.quote_en, entry.word);
+    sentZh = entry.quote_zh;
+    sentSource = '— ' + BOOK_CONFIG.author + ', <em>' + BOOK_CONFIG.bookName + '</em> · ' + entry.chapter;
+  } else {
+    sentEn = highlightWord(entry.ex_en, entry.word);
+    sentZh = entry.ex_zh;
+    sentSource = '— AI Example · Thematically aligned with <em>' + BOOK_CONFIG.bookName + '</em>';
+  }
+  document.getElementById('sentEn').innerHTML = sentEn;
+  document.getElementById('sentZh').textContent = sentZh;
+  document.getElementById('sentSource').innerHTML = sentSource;
+
+  const sa = SYNAN[entry.word] || { syn: [], ant: [] };
+  document.getElementById('synChips').innerHTML = sa.syn.map(w => `<span class="synan-chip syn">${w}</span>`).join('');
+  document.getElementById('antChips').innerHTML = sa.ant.map(w => `<span class="synan-chip ant">${w}</span>`).join('');
+  document.getElementById('synanBlock').style.display = (sa.syn.length || sa.ant.length) ? 'flex' : 'none';
+
+  const tabFlash = document.getElementById('tabFlashcard'); if (tabFlash) tabFlash.classList.toggle('active', S.sentTab === 2);
+  const flashcardContainer = document.getElementById('flashcardContainer');
+  if (flashcardContainer) {
+    flashcardContainer.style.display = S.sentTab === 2 ? 'block' : 'none';
+    if (S.sentTab === 2) renderFlashcard();
+  }
+  document.getElementById('sentenceContent').style.display = S.sentTab === 2 ? 'none' : 'block';
+  if (S.sentTab === 2) renderSpell();
+
+  renderStarredSection();
+  renderMySentences();
+
+  document.getElementById('quizStartDesc').textContent =
+    'Test yourself on Group ' + (S.gIdx + 1) + '. Choose the word, then spell it.';
+  const done = S.quizDone[S.gIdx];
+  const badge = document.getElementById('quizScoreBadge');
+  if (done !== undefined) {
+    badge.style.display = 'inline-block';
+    badge.textContent = done.score + ' / ' + done.total + ' correct';
+  } else {
+    badge.style.display = 'none';
+  }
+
+  const cnt = S.starred.size;
+  document.getElementById('starredCount').textContent = cnt;
+  document.getElementById('starredCountHeader').textContent = cnt;
+}
+
+function renderGroupDots() {
+  const wrap = document.getElementById('groupDots');
+  wrap.innerHTML = '';
+  for (let i = 0; i < NUM_GROUPS; i++) {
+    const d = document.createElement('div');
+    d.className = 'group-dot' +
+      (i === S.gIdx ? ' active' : '') +
+      (S.quizDone[i] !== undefined && i !== S.gIdx ? ' done' : '');
+    wrap.appendChild(d);
+  }
+}
+
+function renderStarredSection() {
+  const list = document.getElementById('starredList');
+  list.innerHTML = '';
+  if (S.starred.size === 0) {
+    list.innerHTML = '<div class="starred-empty">No starred words yet. Tap ☆ on any word to save it.</div>';
+  } else {
+    [...S.starred].forEach(word => {
+      const idx = VOCAB.findIndex(v => v.word === word);
+      if (idx === -1) return;
+      const chip = document.createElement('button');
+      chip.className = 'starred-chip';
+      chip.textContent = word;
+      chip.title = VOCAB[idx].def_en;
+      chip.addEventListener('click', () => navigateToWord(idx));
+      list.appendChild(chip);
+    });
+  }
+  renderStarredQuizStart();
+}
+
+function renderMySentences() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  const sents = S.sentences[word] || [];
+  const max = 3;
+
+  const counter = document.getElementById('mySentCounter');
+  counter.textContent = sents.length + ' / ' + max;
+  counter.className = 'my-sent-counter' + (sents.length >= max ? ' full' : '');
+
+  const input = document.getElementById('mySentInput');
+  const saveBtn = document.getElementById('mySentSaveBtn');
+  input.disabled = sents.length >= max;
+  saveBtn.disabled = sents.length >= max;
+  input.placeholder = sents.length >= max
+    ? 'Maximum 3 sentences saved ✓'
+    : 'Write your own sentence using "' + word + '"…';
+
+  const list = document.getElementById('mySentList');
+  list.innerHTML = '';
+  sents.forEach((text, i) => {
+    const item = document.createElement('div');
+    item.className = 'my-sent-item';
+    item.innerHTML =
+      '<span class="my-sent-num">' + (i + 1) + '</span>' +
+      '<span class="my-sent-text">' + escapeHTML(text) + '</span>' +
+      '<button class="my-sent-del" data-idx="' + i + '" title="Delete">✕</button>';
+    item.querySelector('.my-sent-del').addEventListener('click', () => deleteSentence(word, i));
+    list.appendChild(item);
+  });
+}
+
+function escapeHTML(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function addSentence() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  const input = document.getElementById('mySentInput');
+  const text = input.value.trim();
+  if (!text) { toast('Please write a sentence first.', ''); return; }
+  if (!S.sentences[word]) S.sentences[word] = [];
+  if (S.sentences[word].length >= 3) { toast('Max 3 sentences per word.', ''); return; }
+  const wordLower = word.toLowerCase();
+  const rootLower = wordLower.substring(0, Math.max(4, Math.floor(wordLower.length * 0.72)));
+  if (!text.toLowerCase().includes(rootLower)) {
+    toast('💡 Try to use "' + word + '" in your sentence!', '');
+  }
+  S.sentences[word].push(text);
+  saveSentences();
+  input.value = '';
+  renderMySentences();
+  toast('✓ Sentence saved!', 'good');
+}
+
+function deleteSentence(word, idx) {
+  if (!S.sentences[word]) return;
+  S.sentences[word].splice(idx, 1);
+  if (S.sentences[word].length === 0) delete S.sentences[word];
+  saveSentences();
+  renderMySentences();
+}
+
+function renderStarredQuizStart() {
+  const count = S.starred.size;
+  const canStart = count >= 5;
+  document.getElementById('sqDesc').textContent = canStart
+    ? 'Quiz yourself on all ' + count + ' starred words.'
+    : 'Keep starring words to unlock your personal quiz.';
+  document.getElementById('sqStartBtn').style.display = canStart ? 'inline-block' : 'none';
+  document.getElementById('sqUnlockHint').style.display = canStart ? 'none' : 'block';
+  document.getElementById('sqStarredCount').textContent = count;
+  document.getElementById('sqStartArea').style.display = 'block';
+  document.getElementById('sqQuestionArea').style.display = 'none';
+  document.getElementById('sqResult').style.display = 'none';
+}
+
+function startStarredQuiz() {
+  const starredWords = [...S.starred];
+  if (starredWords.length < 5) return;
+
+  const entries = starredWords
+    .map(w => VOCAB.find(v => v.word === w))
+    .filter(Boolean);
+
+  const questions = shuffle(entries);
+  S.sqQuiz = { questions, qIdx: 0, score: 0, answered: false };
+
+  document.getElementById('sqStartArea').style.display = 'none';
+  document.getElementById('sqQuestionArea').style.display = 'block';
+  document.getElementById('sqResult').style.display = 'none';
+  renderSQQuestion();
+}
+
+function renderSQQuestion() {
+  const q = S.sqQuiz;
+  const entry = q.questions[q.qIdx];
+  const total = q.questions.length;
+
+  document.getElementById('sqQNum').textContent = 'Question ' + (q.qIdx + 1) + ' / ' + total;
+  document.getElementById('sqProgressFill').style.width = ((q.qIdx / total) * 100) + '%';
+  document.getElementById('sqSentence').innerHTML = blankWord(entry.quote_en, entry.word);
+
+  const pool = [...S.starred].filter(w => w !== entry.word);
+  const starredDistractors = shuffle(pool).slice(0, 3);
+  const needed = 3 - starredDistractors.length;
+  let extra = [];
+  if (needed > 0) {
+    extra = shuffle(VOCAB.map(v => v.word).filter(w => w !== entry.word && !S.starred.has(w))).slice(0, needed);
+  }
+  const choices = shuffle([entry.word, ...starredDistractors, ...extra].slice(0, 4));
+
+  const labels = ['A', 'B', 'C', 'D'];
+  const container = document.getElementById('sqChoices');
+  container.innerHTML = '';
+  choices.forEach((word, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'choice-btn';
+    btn.innerHTML = '<span class="choice-label">' + labels[i] + '</span>' + word;
+    btn.dataset.word = word;
+    btn.addEventListener('click', () => checkSQAnswer(word, entry.word, entry.def_en));
+    container.appendChild(btn);
+  });
+
+  const fb = document.getElementById('sqFeedback');
+  fb.style.display = 'none';
+  fb.className = 'quiz-feedback';
+  document.getElementById('sqNextBtn').style.display = 'none';
+  q.answered = false;
+}
+
+function checkSQAnswer(chosen, correct, defHint) {
+  if (S.sqQuiz.answered) return;
+  S.sqQuiz.answered = true;
+
+  document.querySelectorAll('#sqChoices .choice-btn').forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.word === correct) btn.classList.add('correct');
+    else if (btn.dataset.word === chosen && chosen !== correct) btn.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('sqFeedback');
+  if (chosen === correct) {
+    S.sqQuiz.score++;
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Correct! "' + correct + '" — ' + defHint.split(';')[0] + '.';
+  } else {
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The answer is "' + correct + '" — ' + defHint.split(';')[0] + '.';
+  }
+  fb.style.display = 'block';
+
+  const nextBtn = document.getElementById('sqNextBtn');
+  const isLast = S.sqQuiz.qIdx === S.sqQuiz.questions.length - 1;
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function sqNext() {
+  const q = S.sqQuiz;
+  if (q.qIdx < q.questions.length - 1) {
+    q.qIdx++;
+    renderSQQuestion();
+  } else {
+    const total = q.questions.length;
+    const pct = Math.round((q.score / total) * 100);
+    const emoji = pct >= 80 ? '🎉' : pct >= 60 ? '👍' : '📚';
+    document.getElementById('sqQuestionArea').style.display = 'none';
+    document.getElementById('sqResult').style.display = 'block';
+    document.getElementById('sqProgressFill').style.width = '100%';
+    document.getElementById('sqResultScore').textContent = emoji + ' ' + q.score + ' / ' + total;
+    document.getElementById('sqResultLabel').textContent =
+      pct >= 80 ? 'Excellent — your starred words are solid!' :
+      pct >= 60 ? 'Good progress. Review the ones you missed.' :
+                  'Keep studying — revisit your starred words.';
+  }
+}
+
+function goGroup(idx) {
+  S.gIdx = Math.max(0, Math.min(NUM_GROUPS - 1, idx));
+  S.wIdx = 0;
+  S.sentTab = 0;
+  resetQuizUI();
+  render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function goWord(idx) {
+  const group = GROUPS[S.gIdx];
+  S.wIdx = Math.max(0, Math.min(group.length - 1, idx));
+  S.sentTab = 0;
+  render();
+}
+
+function navigateToWord(vocabIdx) {
+  let cumulative = 0;
+  for (let g = 0; g < NUM_GROUPS; g++) {
+    if (vocabIdx < cumulative + GROUPS[g].length) {
+      S.gIdx = g;
+      S.wIdx = vocabIdx - cumulative;
+      S.sentTab = 0;
+      resetQuizUI();
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    cumulative += GROUPS[g].length;
+  }
+}
+
+function toggleStar() {
+  const word = GROUPS[S.gIdx][S.wIdx].word;
+  if (S.starred.has(word)) {
+    S.starred.delete(word);
+    toast('Removed from starred', '');
+  } else {
+    S.starred.add(word);
+    toast('⭐ Starred: ' + word, 'gold');
+  }
+  saveStarred();
+  render();
+}
+
+function resetQuizUI() {
+  S.quiz = null;
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+  document.getElementById('quizStartArea').style.display = 'block';
+  document.getElementById('quizQuestionArea').style.display = 'none';
+  document.getElementById('quizResult').style.display = 'none';
+}
+
+function startQuiz() {
+  const group = GROUPS[S.gIdx];
+  const questions = shuffle(group.map((entry, i) => ({ entry, groupIdx: i })));
+  S.quiz = {
+    questions,
+    qIdx: 0,
+    phase: 1,
+    score: 0,
+    spellScore: 0,
+    answered: false,
+  };
+  document.getElementById('quizStartArea').style.display = 'none';
+  document.getElementById('quizQuestionArea').style.display = 'block';
+  document.getElementById('quizResult').style.display = 'none';
+  renderQuestion();
+}
+
+function renderQuestion() {
+  const q = S.quiz;
+  const { entry } = q.questions[q.qIdx];
+  const total = q.questions.length;
+  const step = q.qIdx * 2 + (q.phase - 1);
+  const totalSteps = total * 2;
+
+  document.getElementById('quizQNum').textContent =
+    'Word ' + (q.qIdx + 1) + ' / ' + total + ' · ' + (q.phase === 1 ? 'Part 1: Choose' : 'Part 2: Spell');
+  document.getElementById('quizProgressFill').style.width = ((step / totalSteps) * 100) + '%';
+
+  document.getElementById('quizNextBtn').style.display = 'none';
+
+  if (q.phase === 1) {
+    document.getElementById('quizPhase1').style.display = 'block';
+    document.getElementById('quizPhase2').style.display = 'none';
+
+    document.getElementById('quizSentence').innerHTML = blankWord(entry.quote_en, entry.word);
+
+    const group = GROUPS[S.gIdx];
+    const distractors = shuffle(group.map(w => w.word).filter(w => w !== entry.word)).slice(0, 3);
+    const choices = shuffle([entry.word, ...distractors]);
+    const labels = ['A', 'B', 'C', 'D'];
+    const container = document.getElementById('quizChoices');
+    container.innerHTML = '';
+    choices.forEach((word, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'choice-btn';
+      btn.innerHTML = '<span class="choice-label">' + labels[i] + '</span>' + word;
+      btn.dataset.word = word;
+      btn.addEventListener('click', () => checkAnswer(word, entry.word));
+      container.appendChild(btn);
+    });
+
+    const fb = document.getElementById('quizFeedback');
+    fb.style.display = 'none';
+    fb.className = 'quiz-feedback';
+    q.answered = false;
+
+  } else {
+    document.getElementById('quizPhase1').style.display = 'none';
+    document.getElementById('quizPhase2').style.display = 'block';
+    renderQuizSpell(entry);
+  }
+}
+
+function renderQuizSpell(entry) {
+  const word = entry.word.toLowerCase();
+  document.getElementById('qSpellSentence').innerHTML = highlightWord(entry.ex_en, entry.word)
+    .replace(/<span class="hl">([^<]+)<\/span>/gi, '<span class="hl">_____<\/span>');
+
+  const boxes = document.getElementById('qSpellBoxes');
+  boxes.innerHTML = '';
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === '-') {
+      const sep = document.createElement('div');
+      sep.style.cssText = 'width:10px;display:flex;align-items:center;justify-content:center;color:var(--muted2);font-weight:900;font-size:1.2rem;';
+      sep.textContent = '-';
+      boxes.appendChild(sep);
+    } else {
+      const b = document.createElement('div');
+      b.className = 'spell-box' + (i === 0 ? ' cursor' : '');
+      b.dataset.idx = i;
+      boxes.appendChild(b);
+    }
+  }
+  const inp = document.getElementById('qSpellInput');
+  inp.value = '';
+  inp.placeholder = word.length + ' letters';
+  const fb = document.getElementById('qSpellFeedback');
+  fb.style.display = 'none';
+  fb.className = 'quiz-feedback';
+  document.getElementById('qSpellRevealBtn').style.display = 'block';
+  updateQSpellBoxes('');
+}
+
+function updateQSpellBoxes(typed) {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const word = entry.word.toLowerCase().replace(/-/g, '');
+  const t = typed.toLowerCase();
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  allBoxes.forEach((b, i) => {
+    b.className = 'spell-box';
+    if (i < t.length) { b.textContent = t[i]; b.classList.add('filled'); }
+    else { b.textContent = ''; if (i === t.length) b.classList.add('cursor'); }
+  });
+}
+
+function checkQuizSpelling() {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const word = entry.word.toLowerCase();
+  const typed = document.getElementById('qSpellInput').value.trim().toLowerCase();
+  const fb = document.getElementById('qSpellFeedback');
+  if (!typed) { toast('Type the word first!', ''); return; }
+
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  const wordClean = word.replace(/-/g, '');
+  const typedClean = typed.replace(/-/g, '');
+
+  if (typedClean === wordClean) {
+    S.quiz.spellScore++;
+    allBoxes.forEach(b => { b.className = 'spell-box correct'; });
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Perfect spelling!';
+    toast('✓ Spelled correctly!', 'good');
+  } else {
+    const wordArr = wordClean.split('');
+    allBoxes.forEach((b, i) => {
+      b.className = 'spell-box';
+      const ch = typedClean[i] || '';
+      b.textContent = ch || wordArr[i];
+      if (!ch) b.classList.add('wrong');
+      else if (ch === wordArr[i]) b.classList.add('correct');
+      else { b.classList.add('wrong'); b.textContent = ch; }
+    });
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The word is "' + entry.word + '".';
+  }
+  fb.style.display = 'block';
+  document.getElementById('qSpellRevealBtn').style.display = 'none';
+  const isLast = S.quiz.qIdx === S.quiz.questions.length - 1;
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next Word →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function checkAnswer(chosen, correct) {
+  if (S.quiz.answered) return;
+  S.quiz.answered = true;
+
+  const btns = document.querySelectorAll('.choice-btn');
+  btns.forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.word === correct) btn.classList.add('correct');
+    else if (btn.dataset.word === chosen && chosen !== correct) btn.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('quizFeedback');
+  if (chosen === correct) {
+    S.quiz.score++;
+    fb.className = 'quiz-feedback correct-fb';
+    fb.textContent = '✓ Correct! "' + correct + '" is right.';
+  } else {
+    // Auto-star word on wrong answer
+    S.starred.add(correct);
+    saveStarred();
+    fb.className = 'quiz-feedback wrong-fb';
+    fb.textContent = '✗ The answer is "' + correct + '".';
+  }
+  fb.style.display = 'block';
+
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = 'Next: Spell It →';
+  nextBtn.style.display = 'inline-block';
+}
+
+function quizNext() {
+  const q = S.quiz;
+  const total = q.questions.length;
+  if (q.phase === 1) {
+    q.phase = 2;
+    renderQuestion();
+  } else if (q.qIdx < total - 1) {
+    q.qIdx++;
+    q.phase = 1;
+    renderQuestion();
+  } else {
+    const mcPct = Math.round((q.score / total) * 100);
+    const spPct = Math.round((q.spellScore / total) * 100);
+    const combined = q.score + q.spellScore;
+    const combMax = total * 2;
+    const emoji = mcPct >= 80 ? '🎉' : mcPct >= 60 ? '👍' : '📚';
+    document.getElementById('quizQuestionArea').style.display = 'none';
+    document.getElementById('quizResult').style.display = 'block';
+    document.getElementById('quizProgressFill').style.width = '100%';
+    document.getElementById('quizResultScore').textContent = emoji + ' ' + combined + ' / ' + combMax;
+    document.getElementById('quizResultLabel').textContent =
+      '📖 Choose: ' + q.score + '/' + total + '  ·  ✏️ Spell: ' + q.spellScore + '/' + total + (
+        mcPct >= 80 && spPct >= 80 ? '  —  Outstanding!' :
+        mcPct >= 60 ? '  —  Good work! Review the ones you missed.' :
+        '  —  Keep studying — you\'ll get there!'
+      );
+    S.quizDone[S.gIdx] = { score: combined, total: combMax };
+    render();
+  }
+}
+
+function renderSpell() {
+  const entry = GROUPS[S.gIdx][S.wIdx];
+  const word = entry.word.toLowerCase();
+
+  document.getElementById('spellSentence').innerHTML = highlightWord(entry.ex_en, entry.word)
+    .replace(/<span class="hl">([^<]+)<\/span>/gi, '<span class="hl">_____</span>');
+
+  const boxes = document.getElementById('spellBoxes');
+  boxes.innerHTML = '';
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === '-') {
+      const sep = document.createElement('div');
+      sep.style.cssText = 'width:10px;display:flex;align-items:center;justify-content:center;color:var(--muted2);font-weight:900;font-size:1.2rem;';
+      sep.textContent = '-';
+      boxes.appendChild(sep);
+    } else {
+      const b = document.createElement('div');
+      b.className = 'spell-box' + (i === 0 ? ' cursor' : '');
+      b.dataset.idx = i;
+      boxes.appendChild(b);
+    }
+  }
+
+  const inp = document.getElementById('spellInput');
+  inp.value = '';
+  inp.placeholder = word.length + ' letters';
+  document.getElementById('spellFeedback').style.display = 'none';
+  document.getElementById('spellFeedback').className = 'spell-feedback';
+  document.getElementById('spellRevealBtn').style.display = 'block';
+  updateBoxes('');
+}
+
+function updateBoxes(typed) {
+  const entry = GROUPS[S.gIdx][S.wIdx];
+  const word = entry.word.toLowerCase().replace(/-/g, '');
+  const t = typed.toLowerCase();
+  const allBoxes = document.querySelectorAll('.spell-box');
+
+  allBoxes.forEach((b, i) => {
+    b.className = 'spell-box';
+    if (i < t.length) {
+      b.textContent = t[i];
+      b.classList.add('filled');
+    } else {
+      b.textContent = '';
+      if (i === t.length) b.classList.add('cursor');
+    }
+  });
+}
+
+function checkSpelling() {
+  const entry = GROUPS[S.gIdx][S.wIdx];
+  const word = entry.word.toLowerCase();
+  const typed = document.getElementById('spellInput').value.trim().toLowerCase();
+  const fb = document.getElementById('spellFeedback');
+
+  if (!typed) { toast('Type the word first!', ''); return; }
+
+  const allBoxes = document.querySelectorAll('.spell-box');
+  const wordClean = word.replace(/-/g, '');
+  const typedClean = typed.replace(/-/g, '');
+
+  if (typedClean === wordClean) {
+    allBoxes.forEach(b => { b.className = 'spell-box correct'; b.textContent = b.textContent || ''; });
+    fb.className = 'spell-feedback ok';
+    fb.textContent = '✓ Correct! You spelled "' + entry.word + '" perfectly.';
+    toast('✓ Spelled correctly!', 'good');
+  } else {
+    const wordArr = wordClean.split('');
+    allBoxes.forEach((b, i) => {
+      b.className = 'spell-box';
+      const ch = typedClean[i] || '';
+      b.textContent = ch || wordArr[i];
+      if (!ch)          b.classList.add('wrong');
+      else if (ch === wordArr[i]) b.classList.add('correct');
+      else              { b.classList.add('wrong'); b.textContent = ch; }
+    });
+    fb.className = 'spell-feedback err';
+    fb.textContent = '✗ Not quite. The word is "' + entry.word + '".';
+  }
+  fb.style.display = 'block';
+  document.getElementById('spellRevealBtn').style.display = 'none';
+}
+
+document.getElementById('prevGroupBtn').addEventListener('click', () => goGroup(S.gIdx - 1));
+document.getElementById('nextGroupBtn').addEventListener('click', () => goGroup(S.gIdx + 1));
+document.getElementById('prevWordBtn').addEventListener('click', () => goWord(S.wIdx - 1));
+document.getElementById('nextWordBtn').addEventListener('click', () => goWord(S.wIdx + 1));
+document.getElementById('starBtn').addEventListener('click', toggleStar);
+  document.getElementById('speakBtn').addEventListener('click', () => speak(GROUPS[S.gIdx][S.wIdx].word));
+  const sentenceBtn = document.getElementById('sentenceHearBtn');
+  if (sentenceBtn) {
+    sentenceBtn.addEventListener('click', () => {
+      const sentEn = document.getElementById('sentEn');
+      if (sentEn) {
+        let text = sentEn.textContent;
+        if (text && text !== '—') {
+          text = text.replace(/<[^>]*>/g, '');
+          if (text.trim()) speak(text);
+        }
+      }
+    });
+  }
+document.getElementById('speakBtn2').addEventListener('click', () => speak(GROUPS[S.gIdx][S.wIdx].word));
+document.getElementById('tabNovel').addEventListener('click', () => { S.sentTab = 0; render(); });
+document.getElementById('tabAI').addEventListener('click',   () => { S.sentTab = 1; render(); });
+const tabFlashcard = document.getElementById('tabFlashcard');
+if (tabFlashcard) tabFlashcard.addEventListener('click', () => { S.sentTab = 2; flashcardState.index = 0; render(); if (document.getElementById('flashcardContainer')) renderFlashcard(); });
+document.getElementById('mySentSaveBtn').addEventListener('click', addSentence);
+document.getElementById('mySentInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); addSentence(); }
+});
+document.getElementById('sqStartBtn').addEventListener('click', startStarredQuiz);
+document.getElementById('sqNextBtn').addEventListener('click', sqNext);
+document.getElementById('sqRetryBtn').addEventListener('click', startStarredQuiz);
+document.getElementById('sqResetBtn').addEventListener('click', renderStarredQuizStart);
+document.getElementById('quizHeader').addEventListener('click', () => {
+  const body = document.getElementById('quizBody');
+  const icon = document.getElementById('quizToggleIcon');
+  const open = body.classList.toggle('open');
+  icon.classList.toggle('open', open);
+});
+document.getElementById('quizStartBtn').addEventListener('click', startQuiz);
+document.getElementById('quizSkipBtn').addEventListener('click', () => {
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+});
+document.getElementById('qSpellInput').addEventListener('input', e => {
+  updateQSpellBoxes(e.target.value);
+});
+document.getElementById('qSpellInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); checkQuizSpelling(); }
+});
+document.getElementById('qSpellCheckBtn').addEventListener('click', checkQuizSpelling);
+document.getElementById('qSpellRevealBtn').addEventListener('click', () => {
+  const entry = S.quiz.questions[S.quiz.qIdx].entry;
+  const fb = document.getElementById('qSpellFeedback');
+  fb.className = 'quiz-feedback wrong-fb';
+  fb.textContent = 'The word is "' + entry.word + '". Try again next time!';
+  fb.style.display = 'block';
+  document.getElementById('qSpellRevealBtn').style.display = 'none';
+  const allBoxes = document.querySelectorAll('#qSpellBoxes .spell-box');
+  const wordClean = entry.word.toLowerCase().replace(/-/g,'');
+  allBoxes.forEach((b, i) => { b.className = 'spell-box wrong'; b.textContent = wordClean[i] || ''; });
+  const isLast = S.quiz.qIdx === S.quiz.questions.length - 1;
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.textContent = isLast ? 'See Results →' : 'Next Word →';
+  nextBtn.style.display = 'inline-block';
+});
+document.getElementById('quizNextBtn').addEventListener('click', quizNext);
+document.getElementById('quizRetryBtn').addEventListener('click', () => {
+  document.getElementById('quizResult').style.display = 'none';
+  document.getElementById('quizStartArea').style.display = 'block';
+});
+document.getElementById('quizCloseBtn').addEventListener('click', () => {
+  document.getElementById('quizBody').classList.remove('open');
+  document.getElementById('quizToggleIcon').classList.remove('open');
+});
+document.getElementById('starredHeader').addEventListener('click', () => {
+  const body = document.getElementById('starredBody');
+  const icon = document.getElementById('starredToggleIcon');
+  const open = body.classList.toggle('open');
+  icon.classList.toggle('open', open);
+});
+document.getElementById('starredToggleBtn').addEventListener('click', () => {
+  const body = document.getElementById('starredBody');
+  const icon = document.getElementById('starredToggleIcon');
+  body.classList.add('open');
+  icon.classList.add('open');
+  document.getElementById('starredSection').scrollIntoView({ behavior: 'smooth' });
+});
+// [Spell listener removed - Spell tab replaced with Flashcard]
+// [Spell listener removed - Spell tab replaced with Flashcard]
+// // [Spell listener removed - Spell tab replaced with Flashcard] /* REMOVED - Spell tab no longer exists */
+const flashPrevBtn = document.getElementById('flashPrevBtn');
+if (flashPrevBtn) flashPrevBtn.addEventListener('click', flashcardPrev);
+const flashNextBtn = document.getElementById('flashNextBtn');
+if (flashNextBtn) flashNextBtn.addEventListener('click', flashcardNext);
+const flashStarBtn = document.getElementById('flashStarBtn');
+if (flashStarBtn) flashStarBtn.addEventListener('click', toggleFlashcardStar);
+// // [Spell listener removed - Spell tab replaced with Flashcard]
+document.addEventListener('keydown', e => {
+  const tag = document.activeElement.tagName;
+  if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+  switch(e.key) {
+    case 'ArrowRight': e.preventDefault(); goWord(S.wIdx + 1); break;
+    case 'ArrowLeft':  e.preventDefault(); goWord(S.wIdx - 1); break;
+    case 'ArrowUp':    e.preventDefault(); goGroup(S.gIdx - 1); break;
+    case 'ArrowDown':  e.preventDefault(); goGroup(S.gIdx + 1); break;
+    case 's': case 'S': toggleStar(); break;
+    case 'p': case 'P': speak(GROUPS[S.gIdx][S.wIdx].word); break;
+    case '1': S.sentTab = 0; render(); break;
+    case '2': S.sentTab = 1; render(); break;
+  }
+});
+
+// ── Print functions ──────────────────────────────────────────
+function openPrintModal() {
+  const grp = GROUPS[S.gIdx];
+  document.getElementById('printGroupLabel').textContent = 'Group ' + (S.gIdx + 1);
+  document.getElementById('printGroupCount').textContent = grp.length;
+  document.getElementById('printAllCount').textContent = VOCAB.length;
+  document.getElementById('printModal').style.display = 'block';
+}
+
+function closePrintModal() {
+  document.getElementById('printModal').style.display = 'none';
+}
+
+function doPrint() {
+  const scope = document.querySelector('input[name="printScope"]:checked').value;
+  const words = scope === 'group' ? GROUPS[S.gIdx] : VOCAB;
+  const groupLabel = scope === 'group' ? 'Group ' + (S.gIdx + 1) : 'All Words';
+
+  const rows = words.map((entry, i) => {
+    const sa = SYNAN[entry.word] || { syn: [], ant: [] };
+    const synText = sa.syn.length ? sa.syn.join(', ') : '—';
+    const antText = sa.ant.length ? sa.ant.join(', ') : '—';
+    return `
+      <div class="pe">
+        <div class="pe-head">
+          <span class="pe-num">${i + 1}</span>
+          <span class="pe-word">${entry.word}</span>
+          <span class="pe-pron">${entry.pron}</span>
+          <span class="pe-ch">${entry.chapter}</span>
+        </div>
+        <div class="pe-def">${entry.def_en}</div>
+        <div class="pe-def zh">${entry.def_zh}</div>
+        <div class="pe-synan">
+          <span class="pe-label syn">SYN</span>${synText}
+          &nbsp;&nbsp;<span class="pe-label ant">ANT</span>${antText}
+        </div>
+        <div class="pe-sent">
+          <span class="pe-sent-label">📖</span>
+          <span>${entry.quote_en}</span>
+        </div>
+        <div class="pe-sent zh">
+          <span class="pe-sent-label"></span>
+          <span>${entry.quote_zh}</span>
+        </div>
+        <div class="pe-sent ex">
+          <span class="pe-sent-label">💡</span>
+          <span>${entry.ex_en}</span>
+        </div>
+        <div class="pe-sent zh">
+          <span class="pe-sent-label"></span>
+          <span>${entry.ex_zh}</span>
+        </div>
+      </div>`;
+  }).join('');
+
+  const html = `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>${BOOK_CONFIG.bookName} — Vocabulary (${groupLabel})</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Songti SC', 'SimSun', serif;
+    font-size: 9.5pt;
+    color: #111;
+    background: white;
+    padding: 14mm 12mm;
+  }
+  h1 {
+    font-size: 15pt;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3pt;
+    letter-spacing: .02em;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 9pt;
+    color: #555;
+    margin-bottom: 12pt;
+    padding-bottom: 8pt;
+    border-bottom: 1.5pt solid #333;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 14pt;
+  }
+  .pe {
+    border-bottom: .5pt solid #ccc;
+    padding: 7pt 0 6pt;
+    break-inside: avoid;
+  }
+  .pe-head {
+    display: flex;
+    align-items: baseline;
+    gap: 5pt;
+    margin-bottom: 2pt;
+    flex-wrap: wrap;
+  }
+  .pe-num {
+    font-size: 7.5pt;
+    color: #888;
+    min-width: 16pt;
+  }
+  .pe-word {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: .01em;
+  }
+  .pe-pron {
+    font-size: 8pt;
+    color: #555;
+    font-style: italic;
+  }
+  .pe-ch {
+    font-size: 7.5pt;
+    color: #888;
+    margin-left: auto;
+  }
+  .pe-def {
+    font-size: 8.5pt;
+    color: #222;
+    margin-bottom: 1.5pt;
+    line-height: 1.4;
+  }
+  .pe-def.zh {
+    color: #444;
+    font-size: 8pt;
+    margin-bottom: 3pt;
+  }
+  .pe-synan {
+    font-size: 8pt;
+    margin-bottom: 3.5pt;
+    color: #333;
+    line-height: 1.5;
+  }
+  .pe-label {
+    font-size: 7pt;
+    font-weight: 700;
+    padding: 1pt 4pt;
+    border-radius: 3pt;
+    margin-right: 3pt;
+    letter-spacing: .04em;
+  }
+  .pe-label.syn {
+    background: #e6faf4;
+    color: #1a7a55;
+    border: .5pt solid #aadec8;
+  }
+  .pe-label.ant {
+    background: #fef0f2;
+    color: #a02040;
+    border: .5pt solid #f0b0bc;
+  }
+  .pe-sent {
+    font-size: 8pt;
+    line-height: 1.45;
+    color: #333;
+    display: flex;
+    gap: 4pt;
+    margin-top: 1.5pt;
+  }
+  .pe-sent.ex { color: #1a4a70; }
+  .pe-sent.zh { color: #555; margin-top: 1pt; }
+  .pe-sent-label {
+    font-size: 8pt;
+    min-width: 12pt;
+    flex-shrink: 0;
+  }
+  .footer {
+    position: running(footer);
+    font-size: 7.5pt;
+    color: #888;
+    text-align: center;
+  }
+  @page {
+    margin: 14mm 12mm 18mm;
+    @bottom-center { content: element(footer); }
+  }
+  @media print {
+    .footer { display: block; }
+  }
+</style>
+</head>
+<body>
+<h1>${BOOK_CONFIG.bookName} Vocabulary</h1>
+<div class="subtitle">${BOOK_CONFIG.author} &nbsp;·&nbsp; ${groupLabel} &nbsp;·&nbsp; ${words.length} words &nbsp;·&nbsp; 📖 Novel sentence &nbsp; 💡 AI example sentence</div>
+<div class="footer">${BOOK_CONFIG.bookName} — ${BOOK_CONFIG.author} &nbsp;|&nbsp; ${groupLabel}</div>
+<div class="grid">${rows}</div>
+</body>
+</html>`;
+
+  closePrintModal();
+  const win = window.open('', '_blank');
+  win.document.write(html);
+  win.document.close();
+  win.focus();
+  setTimeout(() => win.print(), 400);
+}
+
+
+let flashcardState = { side: 'word', index: 0 };
+
+function toggleFlashcard() {
+  const inner = document.getElementById('flashInner');
+  const label = document.getElementById('flashLabel');
+  const content = document.getElementById('flashContent');
+  
+  const group = GROUPS[S.gIdx];
+  const entry = group[flashcardState.index];
+  
+  if (flashcardState.side === 'word') {
+    flashcardState.side = 'def-en';
+    label.textContent = 'English Definition';
+    content.innerHTML = entry.def_en;
+    content.className = 'flashcard-content flashcard-def-en';
+    inner.style.background = 'linear-gradient(160deg, rgba(26,74,112,.85), rgba(14,34,48,.95))';
+  } else if (flashcardState.side === 'def-en') {
+    flashcardState.side = 'def-zh';
+    label.textContent = 'Chinese Definition';
+    content.textContent = entry.def_zh;
+    content.className = 'flashcard-content flashcard-def-zh';
+    inner.style.background = 'linear-gradient(160deg, rgba(50,34,90,.85), rgba(30,20,50,.95))';
+  } else {
+    flashcardState.side = 'word';
+    label.textContent = 'Word';
+    content.textContent = entry.word;
+    content.className = 'flashcard-content';
+    inner.style.background = 'linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95))';
+  }
+}
+
+function renderFlashcard() {
+  const container = document.getElementById('flashcardContainer');
+  if (!container) return; // Exit if flashcard container doesn't exist
+  
+  const group = GROUPS[S.gIdx];
+  const entry = group[flashcardState.index];
+  const isStarred = S.starred.has(entry.word);
+  
+  flashcardState.side = 'word';
+  
+  const inner = document.getElementById('flashInner');
+  const label = document.getElementById('flashLabel');
+  const content = document.getElementById('flashContent');
+  
+  label.textContent = 'Word';
+  content.textContent = entry.word;
+  content.className = 'flashcard-content';
+  inner.style.background = 'linear-gradient(160deg, rgba(14,34,48,.85), rgba(11,27,36,.95))';
+  
+  document.getElementById('flashProgress').textContent = (flashcardState.index + 1) + ' / ' + group.length;
+  document.getElementById('flashPrevBtn').disabled = flashcardState.index === 0;
+  document.getElementById('flashNextBtn').disabled = flashcardState.index === group.length - 1;
+  
+  const starBtn = document.getElementById('flashStarBtn');
+  starBtn.textContent = isStarred ? '⭐' : '☆';
+  starBtn.classList.toggle('starred', isStarred);
+}
+
+function flashcardPrev() {
+  if (flashcardState.index > 0) {
+    flashcardState.index--;
+    renderFlashcard();
+  }
+}
+
+function flashcardNext() {
+  const group = GROUPS[S.gIdx];
+  if (flashcardState.index < group.length - 1) {
+    flashcardState.index++;
+    renderFlashcard();
+  }
+}
+
+function toggleFlashcardStar() {
+  const group = GROUPS[S.gIdx];
+  const word = group[flashcardState.index].word;
+  if (S.starred.has(word)) {
+    S.starred.delete(word);
+  } else {
+    S.starred.add(word);
+  }
+  saveStarred();
+  renderFlashcard();
+}
+
+
+// Initialize
+if (VOCAB.length > 1) {
+  render();
+} else {
+  document.getElementById('wordDisplay').textContent = 'Add Data';
+  document.getElementById('defEn').textContent = 'Please paste your 100 vocabulary words into the VOCAB array.';
+}
+</script>
+
+<!-- Print Modal -->
+<div id="printModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.75); z-index:9999; overflow-y:auto; padding:20px;">
+  <div style="max-width:520px; margin:0 auto; background:var(--panel); border:1px solid var(--s35); border-radius:16px; padding:28px 24px;">
+    <h2 style="font-family:Georgia,serif; color:var(--good); margin-bottom:6px; font-size:1.3rem;">🖨️ Print Vocabulary</h2>
+    <p style="color:var(--muted); font-size:.85rem; margin-bottom:20px;">Each entry includes word, pronunciation, definitions, synonyms &amp; antonyms, and both sentences.</p>
+    <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:22px;">
+      <label style="display:flex; align-items:center; gap:10px; cursor:pointer; color:var(--text); font-weight:600; font-size:.95rem;">
+        <input type="radio" name="printScope" value="group" checked style="accent-color:var(--good); width:16px; height:16px;">
+        Current group only (<span id="printGroupLabel">Group 1</span> · <span id="printGroupCount">10</span> words)
+      </label>
+      <label style="display:flex; align-items:center; gap:10px; cursor:pointer; color:var(--text); font-weight:600; font-size:.95rem;">
+        <input type="radio" name="printScope" value="all" style="accent-color:var(--good); width:16px; height:16px;">
+        All words (<span id="printAllCount">100</span> words)
+      </label>
+    </div>
+    <div style="display:flex; gap:10px;">
+      <button onclick="doPrint()" style="flex:1; background:var(--good); color:#06131a; border:none; border-radius:10px; padding:11px; font-weight:800; font-size:.95rem; cursor:pointer;">Print / Save PDF</button>
+      <button onclick="closePrintModal()" style="flex:1; background:var(--panel2); color:var(--muted); border:1px solid var(--s35); border-radius:10px; padding:11px; font-weight:700; font-size:.95rem; cursor:pointer;">Cancel</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
